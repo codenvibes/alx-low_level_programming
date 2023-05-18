@@ -104,8 +104,30 @@ int main(void)
 ## Variables 
 A variable is a name for an area in memory.
 
-## [Type Casting](https://github.com/codenvibes/playground/blob/master/alx-low_level_programming/0x00-hello_world/playground/type_casting.c)
+## Type Casting
+```
+#include <stdio.h>
 
+/**
+ * main - Type Casting
+ * Description: Type Casting
+ * Return: 0 (success)
+ */
+
+int main(void)
+{
+	float f;
+	int i = 10;
+	f = (float) i; /*assigned 10.0 to f*/
+	printf("%f\n", f);
+	f = 3.14;
+	i = (int) f; /*assigned 3 to i*/
+	printf("%d\n", i);
+
+	return (0);
+}
+
+```
 ## [Learning to program in C part 2](https://intranet.alxswe.com/rltoken/3a5y1N-0FlTaPbKRxlRLlQ)
 
 ## Understanding C program Compilation Process
@@ -130,7 +152,28 @@ Formatted output - `printf()` - displays formatted output to `stdout`
 ```
 printf("who:%s size: %d cost: %5.2f","you",12,1.2); 
 ```
-- [printf.c](https://github.com/codenvibes/playground/blob/master/alx-low_level_programming/0x00-hello_world/playground/printf.c)
+
+```
+#include <stdio.h>
+
+/**
+ * main - Formatted Output
+ * Description: Using printf function
+ * Return: 0(success)
+ */
+
+int main(void)
+{
+	printf("who:%s size:%d cost:%5.2f\n", "you", 12, 1.2);
+	/**
+	 * %5.2f stands for floating point 5 digits with
+	 * two to the right of the decimal place
+	 */
+
+	return (0);
+}
+
+```
 
 <div><code>scanf()</code> - reads formatted input from standard input.
 <div>Input: y 101 </div>
@@ -145,8 +188,51 @@ printf("who:%s size: %d cost: %5.2f","you",12,1.2);
 
 `101` → i
 
-- [io_demo.c](https://github.com/codenvibes/playground/blob/master/alx-low_level_programming/0x00-hello_world/playground/io_demo.c)
-- [io_demo0.c](https://github.com/codenvibes/playground/blob/master/alx-low_level_programming/0x00-hello_world/playground/io_demo0.c)
+```
+#include <stdio.h>
+
+/**
+ * main - Formatted Input
+ * Description: Using scanf function
+ * Return: 0(success)
+ */
+
+int main(void)
+{
+	char c;
+	int f;
+	scanf("%c %d", &c, &f);
+	printf("Input: %c %d\n", c, f);
+
+	return (0);
+}
+
+```
+
+```
+#include <stdio.h>
+/**
+ * main - Formatted Input
+ * Description: Using scanf()
+ * Return: 0(success)
+ */
+
+int main(void)
+{
+	char t, m, k;
+	int age;
+
+	printf("Insert your initials followed by your age\n");
+
+	scanf("%c %c %c %d", &t, &m, &k, &age);
+
+	printf("Your intials are: %c%c%c ", t, m, k);
+	printf("and you are %d years old\n", age);
+
+	return (0);
+}
+
+```
 
 ## Printing text using `puts`
 The `puts` function in C is used to print a string followed by a newline character to the standard output stream. It is defined in the stdio.h header file.
