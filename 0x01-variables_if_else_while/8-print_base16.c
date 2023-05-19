@@ -7,18 +7,18 @@
  */
 int main(void)
 {
-        char y;
-        char v = '0';
+	char y;
+	char v = '0';
 
-        while (v <= '9')
-        {
-                putchar(v);
-                v++;
-        }
-        for (y = 'a'; y <= 'f'; y++)
-        {
-                putchar(y);
-        }
-        putchar('\n');
-        return (0);
+	while (v <= '9')
+	{
+		putchar(v);
+		v++;
+	}
+	for (y = 'a'; y <= 'f'; y++)
+	{
+		putchar(y);
+	}
+	putchar('\n');
+	return (0);
 }
