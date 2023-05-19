@@ -46,7 +46,7 @@
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-- []
+- [x]
     ```
     a = 0;
     while (a < b)
@@ -55,7 +55,7 @@ Please select all correct answers
         a++;
     }
     ```
-- []
+- [ ]
     ```
     a = 0;
     do while (a < b)
@@ -64,11 +64,13 @@ Please select all correct answers
         a++;
     }
     ```
+- [x]
     ```
     a = 0;
     while (a < b)
         printf("%d\n", a++);
     ```
+- [ ]
     ```
     a = 0;
     while (a < b)
@@ -77,6 +79,7 @@ Please select all correct answers
         a++;
     )
     ```
+- [x]
     ```
     a = 0;
     do {
@@ -84,6 +87,7 @@ Please select all correct answers
         a++;
     } while (a < b);
     ```
+- [ ]
     ```
     while (a = 0; a < b; a++)
     {
@@ -109,69 +113,78 @@ What is the size of the `char` data type?
 Which of the following are valid `if` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-
-```
-if ((((((a > b))))))
-{
-  return (a);
-}
-```
-```
-if (a > b)
-  return (a);
-```
-```
-if {a > b}
-(
-  return {a};
-)
-```
-```
-if (a > b)
-{
-  return (a);
-}
-```
-```
-if a > b
-{
-  return (a);
-}
-```
+- [ ]
+    ```
+    if ((((((a > b))))))
+    {
+    return (a);
+    }
+    ```
+- [x]
+    ```
+    if (a > b)
+    return (a);
+    ```
+- [ ]
+    ```
+    if {a > b}
+    (
+    return {a};
+    )
+    ```
+- [x]
+    ```
+    if (a > b)
+    {
+    return (a);
+    }
+    ```
+- [ ]
+    ```
+    if a > b
+    {
+    return (a);
+    }
+    ```
 ## Question #4
 Which of the following are valid `for` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-```
-a = 0;
-for (a < b;;)
-{
-    printf("%d\n", a++);
-}
-```
-```
-a = 0;
-for (; a < b;)
-{
-    printf("%d\n", a++);
-}
-```
-```
-for (int a = 0; a < b; a++)
-{
-    printf("%d\n", a);
-}
-```
-```
-for (a = 0; a < b; a++)
-    printf("%d\n", a);
-```
-```
-for (a = 0; a < b; a++)
-{
-    printf("%d\n", a);
-}
-```
+- [ ]
+    ```
+    a = 0;
+    for (a < b;;)
+    {
+        printf("%d\n", a++);
+    }
+    ```
+- [x]
+    ```
+    a = 0;
+    for (; a < b;)
+    {
+        printf("%d\n", a++);
+    }
+    ```
+- [ ]
+    ```
+    for (int a = 0; a < b; a++)
+    {
+        printf("%d\n", a);
+    }
+    ```
+- [x]
+    ```
+    for (a = 0; a < b; a++)
+        printf("%d\n", a);
+    ```
+- [x]
+    ```
+    for (a = 0; a < b; a++)
+    {
+        printf("%d\n", a);
+    }
+    ```
 ## Question #5
 What is the size of the unsigned int data type?
 - [x] 4 bytes
