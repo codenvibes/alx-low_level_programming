@@ -46,7 +46,15 @@
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-<div><input type="checkbox"> 2</div>
+<details>
+<summary><h3 style="display: inline">Question #3</h3></summary>
+<div>What is the ASCII value of <code>a</code>?
+    <div><input type="checkbox"> 12</div>
+    <div><input type="checkbox"> 1</div>
+    <div><input type="checkbox"> 65</div>
+    <div><input type="checkbox"> 97</div>
+</div>
+</details>
 
 - [x]
     ```
