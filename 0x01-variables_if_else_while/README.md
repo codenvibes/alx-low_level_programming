@@ -50,7 +50,6 @@
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-
 - [x]
     ```
     a = 0;
@@ -102,28 +101,34 @@ Please select all correct answers
 </div>
 </details>
 
-## Question #0
-Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
+<details>
+<summary><h2 style="display: inline">Question #1</h2></summary>
+<div>
 
-Please select all correct answers
-
-
-
-## Question #1
 What is the size of the `float` data type?
 - [x] 4 bytes
 - [ ] 8 bytes
 - [ ] 2 bytes
 - [ ] 1 byte
+</div>
+</details>
 
-## Question #2
+<details>
+<summary><h2 style="display: inline">Question #2</h2></summary>
+<div>
+
 What is the size of the `char` data type?
 - [ ] 4 bytes
 - [ ] 8 bytes
 - [ ] 2 bytes
 - [x] 1 byte
+</div>
+</details>
 
-## Question #3
+<details>
+<summary><h2 style="display: inline">Question #3</h2></summary>
+<div>
+
 Which of the following are valid `if` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
@@ -160,7 +165,13 @@ Please select all correct answers
     return (a);
     }
     ```
-## Question #4
+</div>
+</details>
+
+<details>
+<summary><h2 style="display: inline">Question #4</h2></summary>
+<div>
+
 Which of the following are valid `for` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
@@ -199,12 +210,20 @@ Please select all correct answers
         printf("%d\n", a);
     }
     ```
-## Question #5
-What is the size of the unsigned int data type?
+</div>
+</details>
+
+<details>
+<summary><h2 style="display: inline">Question #5</h2></summary>
+<div>
+
+What is the size of the `unsigned int` data type?
 - [x] 4 bytes
 - [ ] 8 bytes
 - [ ] 2 bytes
 - [ ] 1 byte
+</div>
+</details>
 
 # Tasks
 ## 0. Positive anything is better than negative nothing
