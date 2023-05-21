@@ -46,7 +46,7 @@
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-<div><input type="checkbox"></div>
+<div><input type="checkbox"> 2</div>
 
 - [x]
     ```
