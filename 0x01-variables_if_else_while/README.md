@@ -46,6 +46,18 @@
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
+<details>
+<summary><h3 style="display: inline">Question #0</h3></summary>
+<div>What is the result of <code>12 % 10</code>?
+
+- [ ] 2
+- [ ] 3
+- [ ] 1
+- [ ] 0
+
+</div>
+</details>
+
 - [x]
     ```
     a = 0;
