@@ -42,6 +42,7 @@
 - Your code should use the `Betty` style. It will be checked using betty-style.pl and betty-doc.pl
 
 # Quiz questions
+
 <details>
 <summary><h2 style="display: inline">Question #0</h2></summary>
 <div>
@@ -98,10 +99,7 @@ Please select all correct answers
         printf("%d\n", a);
     }
     ```
-
 </div>
-<br>
-
 </details>
 
 ## Question #0
