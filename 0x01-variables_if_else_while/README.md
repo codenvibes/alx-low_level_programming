@@ -42,21 +42,13 @@
 - Your code should use the `Betty` style. It will be checked using betty-style.pl and betty-doc.pl
 
 # Quiz questions
-## Question #0
+<details>
+<summary><h2 style="display: inline">Question #0</h2></summary>
+<div>
+
 Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
 
 Please select all correct answers
-<details>
-<summary><h3 style="display: inline">Question #0</h3></summary>
-<div>What is the result of <code>12 % 10</code>?
-
-- [ ] 2
-- [ ] 3
-- [ ] 1
-- [ ] 0
-
-</div>
-</details>
 
 - [x]
     ```
@@ -106,6 +98,18 @@ Please select all correct answers
         printf("%d\n", a);
     }
     ```
+
+</div>
+<br>
+
+</details>
+
+## Question #0
+Which of the following are valid `while` or `do/while` statements in ANSI C and Betty-compliant? (Considering `a` and `b` two variables of type `int`)
+
+Please select all correct answers
+
+
 
 ## Question #1
 What is the size of the `float` data type?
