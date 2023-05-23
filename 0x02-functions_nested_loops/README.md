@@ -38,7 +38,7 @@ You do not have to understand the call by reference (address), stack, static var
 <summary><h3 style="display: inline">Question #0</h3></summary>
 <div>What is the result of <code>12 % 10</code>?
 
-- [ ] 2
+- [x] 2
 - [ ] 3
 - [ ] 1
 - [ ] 0
@@ -51,7 +51,7 @@ You do not have to understand the call by reference (address), stack, static var
 <div>What is the result of <code>89 % 7</code>?
 
 - [ ] 3
-- [ ] 5
+- [x] 5
 - [ ] 2
 - [ ] 0
 </div>
@@ -63,7 +63,7 @@ You do not have to understand the call by reference (address), stack, static var
 
 - [ ] 47
 - [ ] 3
-- [ ] 45
+- [x] 45
 </div>
 </details>
 
@@ -74,7 +74,7 @@ You do not have to understand the call by reference (address), stack, static var
 - [ ] 12
 - [ ] 1
 - [ ] 65
-- [ ] 97
+- [x] 97
 </div>
 </details>
 
@@ -84,7 +84,7 @@ You do not have to understand the call by reference (address), stack, static var
 
 - [ ] 12
 - [ ] 1
-- [ ] 65
+- [x] 65
 - [ ] 97
 </div>
 </details>
@@ -93,7 +93,7 @@ You do not have to understand the call by reference (address), stack, static var
 <summary><h3 style="display: inline">Question #5</h3></summary>
 <div>What is the ASCII value of <code>J</code>?
 
-- [ ] 74
+- [x] 74
 - [ ] 76
 - [ ] 72
 - [ ] 70
@@ -107,7 +107,7 @@ You do not have to understand the call by reference (address), stack, static var
 - [ ] 2
 - [ ] 3
 - [ ] 1
-- [ ] 0
+- [x] 0
 </div>
 </details>
 
@@ -116,7 +116,7 @@ You do not have to understand the call by reference (address), stack, static var
 <div>What is the ASCII value of <code>5</code>?
 
 - [ ] 5
-- [ ] 53
+- [x] 53
 - [ ] 50
 </div>
 </details>
@@ -127,7 +127,7 @@ You do not have to understand the call by reference (address), stack, static var
 
 - [ ] 2
 - [ ] 1
-- [ ] 0
+- [x] 0
 </div>
 </details>
 
@@ -135,7 +135,7 @@ You do not have to understand the call by reference (address), stack, static var
 <summary><h3 style="display: inline">Question #9</h3></summary>
 <div>What is the ASCII value of <code>0</code>?
 
-- [ ] 48
+- [x] 48
 - [ ] 0
 - [ ] 79
 </div>
@@ -146,10 +146,10 @@ You do not have to understand the call by reference (address), stack, static var
 <div>Which of these loop statements don’t exist?
 
 - [ ] `while`
-- [ ] `each`
+- [x] `each`
 - [ ] `do... while`
-- [ ] `loop_to`
-- [ ] `foreach`
+- [x] `loop_to`
+- [x] `foreach`
 - [ ] `for`
 </div>
 </details>
