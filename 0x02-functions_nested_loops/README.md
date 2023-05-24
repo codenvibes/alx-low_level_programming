@@ -156,7 +156,13 @@ You do not have to understand the call by reference (address), stack, static var
 
 
 # Tasks
+
+<details>
+<summary>
+
 ## 0. _putchar
+</summary>
+
 `mandatory`
 
 Write a program that prints `_putchar`, followed by a new line.
@@ -171,7 +177,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [0-putchar.c]()
+</details>
+
+<details>
+<summary>
+
 ## 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+</summary>
+
 `mandatory`
 
 Write a function that prints the alphabet, in lowercase, followed by a new line.
@@ -200,7 +213,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [1-alphabet.c]()
+</details>
+
+<details>
+<summary>
+
 ## 2. 10 x alphabet
+</summary>
+
 `mandatory`
 
 Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
@@ -238,7 +258,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [2-print_alphabet_x10.c]()
+</details>
+
+<details>
+<summary>
+
 ## 3. islower
+</summary>
+
 `mandatory`
 
 Write a function that checks for lowercase character.
@@ -278,7 +305,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [3-islower.c]()
+</details>
+
+<details>
+<summary>
+
 ## 4. isalpha
+</summary>
+
 `mandatory`
 
 Write a function that checks for alphabetic character.
@@ -320,7 +354,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [4-isalpha.c]()
+</details>
+
+<details>
+<summary>
+
 ## 5. Sign
+</summary>
+
 `mandatory`
 
 Write a function that prints the sign of a number.
@@ -375,7 +416,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [5-sign.c]()
+</details>
+
+<details>
+<summary>
+
 ## 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
+</summary>
+
 `mandatory`
 
 Write a function that computes the absolute value of an integer.
@@ -418,7 +466,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [6-abs.c]()
+</details>
+
+<details>
+<summary>
+
 ## 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
+</summary>
+
 `mandatory`
 
 Write a function that prints the last digit of a number.
@@ -453,7 +508,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [7-print_last_digit.c]()
+</details>
+
+<details>
+<summary>
+
 ## 8. I'm federal agent Jack Bauer, and today is the longest day of my life
+</summary>
+
 `mandatory`
 
 Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
@@ -504,7 +566,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [8-24_hours.c]()
+</details>
+
+<details>
+<summary>
+
 ## 9. Learn your times table
+</summary>
+
 `mandatory`
 
 Write a function that prints the 9 times table, starting with 0.
@@ -553,7 +622,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [9-times_table.c]()
+</details>
+
+<details>
+<summary>
+
 ## 10. a + b
+</summary>
+
 `mandatory`
 
 Write a function that adds two integers and returns the result.
@@ -585,7 +661,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [10-add.c]()
+</details>
+
+<details>
+<summary>
+
 ## 11. 98 Battery Street, the OG
+</summary>
+
 `mandatory`
 
 Write a function that prints all natural numbers from `n` to `98`, followed by a new line.
@@ -626,7 +709,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [11-print_to_98.c]()
+</details>
+
+<details>
+<summary>
+
 ## 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+</summary>
+
 `#advanced`
 
 Write a function that prints the n times table, starting with 0.
@@ -714,7 +804,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [100-times_table.c]()
+</details>
+
+<details>
+<summary>
+
 ## 13. Nature made the natural numbers; All else is the work of women
+</summary>
+
 `#advanced`
 
 If we list all the natural numbers below `10` that are multiples of `3` or `5`, we get `3`, `5`, `6` and `9`. The sum of these multiples is `23`. Write a program that computes and prints the sum of all the multiples of `3` or `5` below `1024` (excluded), followed by a new line.
@@ -724,7 +821,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [101-natural.c]()
+</details>
+
+<details>
+<summary>
+
 ## 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A
+</summary>
+
 `#advanced`
 
 Write a program that prints the first 50 Fibonacci numbers, starting with `1` and `2`, followed by a new line.
@@ -735,7 +839,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [102-fibonacci.c]()
+</details>
+
+<details>
+<summary>
+
 ## 15. Even Liber Abbaci
+</summary>
+
 `#advanced`
 
 Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with `1` and `2`, the first 10 terms will be: `1, 2, 3, 5, 8, 13, 21, 34, 55, 89`. By considering the terms in the Fibonacci sequence whose values do not exceed 4,000,000, write a program that finds and prints the sum of the even-valued terms, followed by a new line.
@@ -745,7 +856,14 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [103-fibonacci.c]()
+</details>
+
+<details>
+<summary>
+
 ## 16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+
+</summary>
+
 `#advanced`
 
 Write a program that finds and prints the first 98 Fibonacci numbers, starting with `1` and `2`, followed by a new line.
@@ -759,3 +877,4 @@ Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x02-functions_nested_loops
 - File: [104-fibonacci.c]()
+</details>
