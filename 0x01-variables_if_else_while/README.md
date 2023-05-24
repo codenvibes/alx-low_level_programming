@@ -11,7 +11,13 @@
 ### [Logical operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/)
 ### [while loop in C](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm)
 ### [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
+
+<details>
+<summary style="display:inline">
+
 ### [C – Increment/decrement Operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-increment-decrement-operators/)
+
+</summary>
 
 ```
 #include <stdio.h>
@@ -47,6 +53,8 @@ printf("a++ : %d   a : %d\n", a++, a);
 
 In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
 </details>
+
+</etails>
 
 # Notes
 ### The if Statement 
