@@ -43,6 +43,8 @@ c-- : 1   c : 0
 --d : 0   d : 0
 ```
 Four integer variables (`a`, `b`, `c`, and `d`) are declared and initialized to a value of 1.
+
+<div>
 <details>
 <summary>
 
@@ -54,19 +56,20 @@ printf("a++ : %d   a : %d\n", a++, a);
 In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
 </details>
 
-</details>
 <details>
 <summary>
 
 ```
 printf("++b : %d   b : %d\n", ++b, b);
 ```
-</summary>
+<summary>
 
 Here, `++b` is a pre-increment operation. It increments `b` to 2 and then uses the updated value in the expression. Hence, the value printed as `++b` is 2. The subsequent use of `b` in the same statement (`b`) will also reflect the updated value. Therefore, the value printed as `b` is 2.
 </details>
+</div>
 
 </details>
+
 
 # Notes
 ### The if Statement 
