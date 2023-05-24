@@ -66,12 +66,39 @@ printf("++b : %d   b : %d\n", ++b, b);
 Here, `++b` is a pre-increment operation. It increments `b` to 2 and then uses the updated value in the expression. Hence, the value printed as `++b` is 2. The subsequent use of `b` in the same statement (`b`) will also reflect the updated value. Therefore, the value printed as `b` is 2.
 </details>
 
+<details>
+<summary>
+
+```
+printf("c-- : %d   c : %d\n", c--, c);
+```
+</summary>
+
+In this line, `c--` is a post-decrement operation. The current value of `c` (which is 1) is used in the expression first, and then c is decremented. So, the value printed is 1. However, note that the subsequent use of `c` in the same statement (`c`) will reflect the updated value after the decrement. Therefore, the value printed as `c` is 0.
+</details>
+
+<details>
+<summary>
+
+```
+printf("--d : %d   d : %d\n", --d, d);
+```
+</summary>
+
+In this line, `--d` is a pre-decrement operation. It decrements `d` to 0 and then uses the updated value in the expression. Hence, the value printed as `--d` is 0. The subsequent use of `d` in the same statement (`d`) will also reflect the updated value. Therefore, the value printed as `d` is 0.
+</details>
 
 </details>
 
 
 # Notes
+
+<details>
+<summary style="display: inline">
+
 ### The if Statement 
+</summary>
+
 ```
 if (expression)
   statements
@@ -85,6 +112,8 @@ int in_stock = 20;
 if (in_stock)
   printf("Order received.\n"); 
 ```
+</details>
+
 ### The if-else Statement 
 ```
 #include <stdio.h>
