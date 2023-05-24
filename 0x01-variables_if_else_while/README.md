@@ -44,7 +44,6 @@ c-- : 1   c : 0
 ```
 Four integer variables (`a`, `b`, `c`, and `d`) are declared and initialized to a value of 1.
 
-<div>
 <details>
 <summary>
 
@@ -66,7 +65,7 @@ printf("++b : %d   b : %d\n", ++b, b);
 
 Here, `++b` is a pre-increment operation. It increments `b` to 2 and then uses the updated value in the expression. Hence, the value printed as `++b` is 2. The subsequent use of `b` in the same statement (`b`) will also reflect the updated value. Therefore, the value printed as `b` is 2.
 </details>
-</div>
+
 
 </details>
 
