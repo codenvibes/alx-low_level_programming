@@ -1,16 +1,126 @@
 # **0x01. C - VARIABLES, IF, ELSE, WHILE**
 
 # Resources
-- [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230524T062206Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8c35f4df15ea6b2f78dc6c5bc162221e9edf7fa0fa88a999fcf956aa8c22e9cb) (You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”.)
-- [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html)
-- [integers](https://publications.gbdirect.co.uk//c_book/chapter2/integral_types.html)
-- [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm)
-- [If statements in C](https://www.cprogramming.com/tutorial/c/lesson2.html)
-- [if…else statement](https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm)
-- [Relational operators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm)
-- [Logical operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/)
-- [while loop in C](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm)
-- [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
+## [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230524%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230524T062206Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=8c35f4df15ea6b2f78dc6c5bc162221e9edf7fa0fa88a999fcf956aa8c22e9cb) (You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”.)
+## [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html)
+## [integers](https://publications.gbdirect.co.uk//c_book/chapter2/integral_types.html)
+## [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm)
+## [If statements in C](https://www.cprogramming.com/tutorial/c/lesson2.html)
+## [if…else statement](https://www.tutorialspoint.com/cprogramming/if_else_statement_in_c.htm)
+## [Relational operators](https://www.tutorialspoint.com/cprogramming/c_relational_operators.htm)
+## [Logical operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-logical-operators/)
+## [while loop in C](https://www.tutorialspoint.com/cprogramming/c_while_loop.htm)
+## [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
+## [C – Increment/decrement Operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-increment-decrement-operators/)
+
+```
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    int b = 1;
+    int c = 1;
+    int d = 1;
+
+    printf("a++ : %d   a : %d\n", a++, a);
+    printf("++b : %d   b : %d\n", ++b, b);
+    printf("c-- : %d   c : %d\n", c--, c);
+    printf("--d : %d   d : %d\n", --d, d);
+}
+```
+output:
+```
+a++ : 1   a : 2
+++b : 2   b : 2
+c-- : 1   c : 0
+--d : 0   d : 0
+```
+Four integer variables (`a`, `b`, `c`, and `d`) are declared and initialized to a value of 1.
+<details>
+<summary style="display: inline">
+
+```
+printf("a++ : %d   a : %d\n", a++, a);
+```
+</summary>
+</details>
+
+```
+printf("a++ : %d   a : %d\n", a++, a);
+```
+In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
+
+# Notes
+## The if Statement 
+```
+if (expression)
+  statements
+```
+The expression evaluates to either **true** or **false**, and statements can be a single statement or a code block enclosed by curly braces { }.
+An expression that evaluates to a non-zero value is considered true.
+
+For example:
+```
+int in_stock = 20;
+if (in_stock)
+  printf("Order received.\n"); 
+```
+## The if-else Statement 
+```
+#include <stdio.h>
+
+int main() {
+  int score = 89;
+  
+  if (score >= 90)
+    printf("Top 10%%.\n");
+  else
+    printf("Less than 90.\n");
+    
+  return 0;
+}
+```
+## ?: operator
+Another way to form an if-else statement is by using the ?: operator in a conditional expression. The ?: operator can have only one statement associated with the if and the else.
+```
+#include <stdio.h>
+
+int main() {
+  int y;
+  int x = 3;
+
+  y = (x >= 5) ?  5 : x;
+
+/* This is equivalent to:
+  if (x >= 5)
+    y = 5;
+  else
+    y = x;
+*/
+
+  return 0;
+}
+```
+## Logical Operators
+### The && Operator  
+The logical AND operator `&&` returns a true result only when both expressions are true.
+> A compound Boolean expression is evaluated **from left to right**. Evaluation stops when no further test is needed for determining the result, so be sure to consider the arrangement of operands when one result affects the outcome of a later result.
+### The || Operator 
+The logical OR operator `||` returns a true result when any one expression or both expressions are true. 
+```
+if (n == 999 || (n > 0 && n <= 100))
+  printf("Input valid.\n");
+```
+> Parentheses are used for clarity even though && has higher precedence than || and will be evaluated first.
+### The ! Operator 
+The logical NOT operator ! returns the reverse of its value. 
+
+NOT true returns false, and NOT false returns true.
+```
+if (!(n == 'x' || n == 'X'))
+  printf("Roman numeral is not 10.\n");
+```
 
 ## man or help:
 - `ascii` (You do not need to learn about `scanf`, `getc`, `getchar`, `EOF`, `EXIT_SUCCESS`, `time`, `rand`, `srand`, `RAND_MAX`, `for` loops, `do...while` loops, functions.)
