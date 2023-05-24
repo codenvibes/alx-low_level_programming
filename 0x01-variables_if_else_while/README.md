@@ -48,13 +48,8 @@ printf("a++ : %d   a : %d\n", a++, a);
 In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
 </details>
 
-```
-printf("a++ : %d   a : %d\n", a++, a);
-```
-
-
 # Notes
-## The if Statement 
+### The if Statement 
 ```
 if (expression)
   statements
@@ -68,7 +63,7 @@ int in_stock = 20;
 if (in_stock)
   printf("Order received.\n"); 
 ```
-## The if-else Statement 
+### The if-else Statement 
 ```
 #include <stdio.h>
 
@@ -83,7 +78,7 @@ int main() {
   return 0;
 }
 ```
-## ?: operator
+### ?: operator
 Another way to form an if-else statement is by using the ?: operator in a conditional expression. The ?: operator can have only one statement associated with the if and the else.
 ```
 #include <stdio.h>
@@ -104,18 +99,18 @@ int main() {
   return 0;
 }
 ```
-## Logical Operators
-### The && Operator  
+### Logical Operators
+#### The && Operator  
 The logical AND operator `&&` returns a true result only when both expressions are true.
 > A compound Boolean expression is evaluated **from left to right**. Evaluation stops when no further test is needed for determining the result, so be sure to consider the arrangement of operands when one result affects the outcome of a later result.
-### The || Operator 
+#### The || Operator 
 The logical OR operator `||` returns a true result when any one expression or both expressions are true. 
 ```
 if (n == 999 || (n > 0 && n <= 100))
   printf("Input valid.\n");
 ```
 > Parentheses are used for clarity even though && has higher precedence than || and will be evaluated first.
-### The ! Operator 
+#### The ! Operator 
 The logical NOT operator ! returns the reverse of its value. 
 
 NOT true returns false, and NOT false returns true.
