@@ -21,8 +21,46 @@
 - You are not allowed to use `global variables`
 - No more than 5 functions per file
 - You are not allowed to use the `standard library`. Any use of functions like `printf`, `puts`, etc… is forbidden
-- You are allowed to use <details><summary>[_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)</summary>
+- You are allowed to use [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
+<details><summary>_putchar.c</summary>
 
+```
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+        return (write(1, &c, 1));
+}
+```
+This code snippet defines a function named `_putchar` that writes a single character to the standard output (stdout). It is a simple implementation of the `_putchar` function.
+```
+#include <unistd.h>
+```
+This line includes the header file `unistd.h`, which provides access to various system-level functions, including the `write` function that will be used in the `_putchar` function.
+```
+int _putchar(char c)
+{
+    return (write(1, &c, 1));
+}
+
+```
+This section defines the `_putchar` function. It takes a single parameter, `c`, which represents the character to be printed.
+
+The function body consists of a single line that calls the `write` function with the following arguments:
+- `1`: The file descriptor representing the standard output (stdout).
+- `&c`: The address of the character `c` to be written.
+- `1`: The number of bytes to write (in this case, 1 byte for a single character).
+
+The `write` function is a low-level system call that writes data to a file descriptor. In this case, it writes the character `c` to the standard output. The return value of `write` is then returned by the `_putchar` function.
+
+Overall, this code provides a basic implementation of the `_putchar` function that can be used to print characters to the standard output. It's often used in conjunction with other functions to build more complex I/O operations or to customize the output format in C programs.
 </details>
 
 - You don’t have to push `_putchar.c`, we will use our file. If you do it won’t be taken into account
