@@ -190,6 +190,65 @@ if (!(n == 'x' || n == 'X'))
 ```
 </details>
 
+<details>
+<summary>
+
+### The while Loop 
+</summary style="display: inline">
+
+The **while** statement is called a **loop structure** because it executes statements repeatedly while an expression is true, looping over and over again.
+
+The expression evaluates to either true or false, and statements can be a single statement or, more commonly, a code block enclosed by curly braces { }.
+```
+#include <stdio.h>
+
+int main() {
+  int count = 1;
+  
+  while (count < 8) {
+    printf("Count = %d\n", count);
+    count++;
+  }
+    
+  return 0;
+}
+```
+</details>
+
+<details>
+<summary>
+
+### The do-while Loop 
+</summary>
+
+> The do-while loop executes the loop statements before evaluating the expression to determine if the loop should be repeated.
+
+It takes the form: 
+```
+do {
+  statements
+} while (expression);
+```
+The expression evaluates to either true or false, and statements can be a single statement or a code block enclosed by curly braces { }.
+```
+#include <stdio.h>
+
+int main() {
+  int count = 1;
+  
+  do {
+    printf("Count = %d\n", count);
+    count++;
+  } while (count < 8);
+    
+  return 0;
+}
+```
+Note the semicolon after the while statement.
+
+The do-while loop always executes at least once, even if the expression evaluates to false.
+</details>
+
 ## man or help:
 - `ascii` (You do not need to learn about `scanf`, `getc`, `getchar`, `EOF`, `EXIT_SUCCESS`, `time`, `rand`, `srand`, `RAND_MAX`, `for` loops, `do...while` loops, functions.)
 
