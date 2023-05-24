@@ -13,7 +13,7 @@
 ### [While loop](https://www.youtube.com/watch?v=Ju1LYO9pkaI)
 
 <details>
-<summary style="display:inline">
+<summary>
 
 ### [C – Increment/decrement Operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-increment-decrement-operators/)
 
@@ -94,7 +94,7 @@ In this line, `--d` is a pre-decrement operation. It decrements `d` to 0 and the
 # Notes
 
 <details>
-<summary style="display: inline">
+<summary>
 
 ### The if Statement 
 </summary>
@@ -115,7 +115,7 @@ if (in_stock)
 </details>
 
 <details>
-<summary style="display:inline">
+<summary>
 
 ### The if-else Statement 
 </summary>
@@ -137,7 +137,7 @@ int main() {
 </details>
 
 <details>
-<summary style="display:inline">
+<summary>
 
 ### ?: operator
 </summary>
@@ -165,7 +165,7 @@ int main() {
 </details>
 
 <details>
-<summary style="display:inline">
+<summary>
 
 ### Logical Operators
 </summary>
@@ -194,7 +194,7 @@ if (!(n == 'x' || n == 'X'))
 <summary>
 
 ### The while Loop 
-</summary style="display: inline">
+</summary>
 
 The **while** statement is called a **loop structure** because it executes statements repeatedly while an expression is true, looping over and over again.
 
