@@ -38,18 +38,20 @@ c-- : 1   c : 0
 ```
 Four integer variables (`a`, `b`, `c`, and `d`) are declared and initialized to a value of 1.
 <details>
-<summary style="display: inline">
+<summary>
 
 ```
 printf("a++ : %d   a : %d\n", a++, a);
 ```
 </summary>
+
+In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
 </details>
 
 ```
 printf("a++ : %d   a : %d\n", a++, a);
 ```
-In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
+
 
 # Notes
 ## The if Statement 
