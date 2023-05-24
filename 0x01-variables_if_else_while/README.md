@@ -249,6 +249,62 @@ Note the semicolon after the while statement.
 The do-while loop always executes at least once, even if the expression evaluates to false.
 </details>
 
+<details>
+<summary>
+
+### break and continue 
+</summary>
+
+The break statement was introduced for use in the switch statement. It is also useful for immediately exiting a loop.
+
+For example, the following program uses a break to exit a while loop:
+```
+int num = 5;
+  
+while (num > 0) {
+  if (num == 3)
+    break;
+  printf("%d\n", num);
+  num--;
+}
+```
+This program displays:
+
+5
+
+4
+
+and then exits the loop.
+
+When you want to remain in the loop, but skip ahead to the next iteration, you use the continue statement.
+
+For example:
+```
+int num = 5;
+  
+while (num > 0) {
+  num--;
+  if (num == 3)
+    continue;
+      
+  printf("%d\n", num);
+}
+```
+The program output displays:
+
+4
+
+2
+
+1
+
+0
+
+As you can see, the value 3 is skipped.
+
+In the code above, if num was decremented after the continue statement an infinite loop would be created.
+</details>
+
 ## man or help:
 - `ascii` (You do not need to learn about `scanf`, `getc`, `getchar`, `EOF`, `EXIT_SUCCESS`, `time`, `rand`, `srand`, `RAND_MAX`, `for` loops, `do...while` loops, functions.)
 
