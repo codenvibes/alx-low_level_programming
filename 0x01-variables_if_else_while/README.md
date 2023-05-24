@@ -54,7 +54,7 @@ printf("a++ : %d   a : %d\n", a++, a);
 In this line, `a++` is a post-increment operation. The current value of `a` (which is 1) is used in the expression first, and then `a` is incremented. So, the value printed is 1. However, note that the subsequent use of `a` in the same statement (`a`) will reflect the updated value after the increment. Therefore, the value printed as `a` is 2.
 </details>
 
-</etails>
+</details>
 
 # Notes
 ### The if Statement 
