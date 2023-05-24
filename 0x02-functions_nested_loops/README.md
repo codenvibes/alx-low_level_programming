@@ -158,7 +158,7 @@ You do not have to understand the call by reference (address), stack, static var
 # Tasks
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 0. _putchar
 </summary>
@@ -180,7 +180,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 </summary>
@@ -216,7 +216,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 2. 10 x alphabet
 </summary>
@@ -261,7 +261,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 3. islower
 </summary>
@@ -308,7 +308,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 4. isalpha
 </summary>
@@ -357,7 +357,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 5. Sign
 </summary>
@@ -419,7 +419,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
 </summary>
@@ -469,7 +469,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 </summary>
@@ -511,7 +511,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 8. I'm federal agent Jack Bauer, and today is the longest day of my life
 </summary>
@@ -569,7 +569,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 9. Learn your times table
 </summary>
@@ -625,7 +625,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 10. a + b
 </summary>
@@ -664,7 +664,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 11. 98 Battery Street, the OG
 </summary>
@@ -712,7 +712,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
 </summary>
@@ -807,7 +807,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 13. Nature made the natural numbers; All else is the work of women
 </summary>
@@ -824,7 +824,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A
 </summary>
@@ -842,7 +842,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 15. Even Liber Abbaci
 </summary>
@@ -859,7 +859,7 @@ Repo:
 </details>
 
 <details>
-<summary>
+<summary style="display: inline">
 
 ## 16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+
 </summary>
