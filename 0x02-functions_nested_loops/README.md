@@ -1,4 +1,5 @@
 # **0x02. C - FUNCTIONS, NESTED LOOPS**
+- https://www.youtube.com/watch?v=zxJe3iDivjM
 
 # Notes
 [Nested while loops](https://www.youtube.com/watch?v=Z3iGeQ1gIss)
