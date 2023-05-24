@@ -219,7 +219,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 2. 10 x alphabet
+### 2. 10 x alphabet
 </summary>
 
 `mandatory`
@@ -264,7 +264,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 3. islower
+### 3. islower
 </summary>
 
 `mandatory`
@@ -311,7 +311,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 4. isalpha
+### 4. isalpha
 </summary>
 
 `mandatory`
@@ -360,7 +360,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 5. Sign
+### 5. Sign
 </summary>
 
 `mandatory`
@@ -422,7 +422,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
+### 6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you
 </summary>
 
 `mandatory`
@@ -472,7 +472,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
+### 7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 </summary>
 
 `mandatory`
@@ -514,7 +514,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 8. I'm federal agent Jack Bauer, and today is the longest day of my life
+### 8. I'm federal agent Jack Bauer, and today is the longest day of my life
 </summary>
 
 `mandatory`
@@ -572,7 +572,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 9. Learn your times table
+### 9. Learn your times table
 </summary>
 
 `mandatory`
@@ -628,7 +628,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 10. a + b
+### 10. a + b
 </summary>
 
 `mandatory`
@@ -667,7 +667,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 11. 98 Battery Street, the OG
+### 11. 98 Battery Street, the OG
 </summary>
 
 `mandatory`
@@ -715,7 +715,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+### 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
 </summary>
 
 `#advanced`
@@ -810,7 +810,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 13. Nature made the natural numbers; All else is the work of women
+### 13. Nature made the natural numbers; All else is the work of women
 </summary>
 
 `#advanced`
@@ -827,7 +827,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A
+### 14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A
 </summary>
 
 `#advanced`
@@ -845,7 +845,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 15. Even Liber Abbaci
+### 15. Even Liber Abbaci
 </summary>
 
 `#advanced`
@@ -862,7 +862,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+
+### 16. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A+
 </summary>
 
 `#advanced`
