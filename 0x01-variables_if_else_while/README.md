@@ -114,7 +114,12 @@ if (in_stock)
 ```
 </details>
 
+<details>
+<summary style="display:inline">
+
 ### The if-else Statement 
+</summary>
+
 ```
 #include <stdio.h>
 
@@ -129,7 +134,14 @@ int main() {
   return 0;
 }
 ```
+</details>
+
+<details>
+<summary style="display:inline">
+
 ### ?: operator
+</summary>
+
 Another way to form an if-else statement is by using the ?: operator in a conditional expression. The ?: operator can have only one statement associated with the if and the else.
 ```
 #include <stdio.h>
@@ -150,7 +162,14 @@ int main() {
   return 0;
 }
 ```
+</details>
+
+<details>
+<summary style="display:inline">
+
 ### Logical Operators
+</summary>
+
 #### The && Operator  
 The logical AND operator `&&` returns a true result only when both expressions are true.
 > A compound Boolean expression is evaluated **from left to right**. Evaluation stops when no further test is needed for determining the result, so be sure to consider the arrangement of operands when one result affects the outcome of a later result.
@@ -169,6 +188,7 @@ NOT true returns false, and NOT false returns true.
 if (!(n == 'x' || n == 'X'))
   printf("Roman numeral is not 10.\n");
 ```
+</details>
 
 ## man or help:
 - `ascii` (You do not need to learn about `scanf`, `getc`, `getchar`, `EOF`, `EXIT_SUCCESS`, `time`, `rand`, `srand`, `RAND_MAX`, `for` loops, `do...while` loops, functions.)
