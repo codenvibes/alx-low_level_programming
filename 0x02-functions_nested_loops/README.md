@@ -713,7 +713,10 @@ Repo:
 </details>
 
 <details>
-<summary style="display: inline"><h3>12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself</h3></summary>
+<summary style="display: inline">
+
+### 12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself
+</summary>
 
 `#advanced`
 
