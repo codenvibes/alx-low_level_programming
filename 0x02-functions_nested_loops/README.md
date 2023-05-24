@@ -160,7 +160,7 @@ You do not have to understand the call by reference (address), stack, static var
 <details>
 <summary style="display: inline">
 
-## 0. _putchar
+### 0. _putchar
 </summary>
 
 `mandatory`
@@ -182,7 +182,7 @@ Repo:
 <details>
 <summary style="display: inline">
 
-## 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+### 1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
 </summary>
 
