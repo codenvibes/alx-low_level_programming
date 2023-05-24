@@ -315,7 +315,7 @@ The for statement is a loop structure that executes statements a fixed number of
 
 It takes the form: 
 ```
-for (initvalue; condition; increment) {
+for (init_expr; loop_condition; loop_expr) {
   statements;
 }
 ```
