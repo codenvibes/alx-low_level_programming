@@ -16,7 +16,7 @@ Debugging is the process of finding and fixing errors in software that prevents 
 # Quiz questions
 
 <details>
-<summary><h2 style="display: inline">Question #0</h2></summary>
+<summary><h3 style="display: inline">Question #0</h3></summary>
 <div>
 
 The following code gives this output. What is the error?
@@ -65,7 +65,7 @@ carrie@ubuntu:/debugging$
 </details>
 
 <details>
-<summary><h2 style="display: inline">Question #1</h2></summary>
+<summary><h3 style="display: inline">Question #1</h3></summary>
 <div>
 
 The following code gives this incorrect output. Which of the following statements about what is causing the error is true?
@@ -109,7 +109,7 @@ carrie@ubuntu:/debugging$ ./a.out
 </details>
 
 <details>
-<summary><h2 style="display: inline">Question #2</h2></summary>
+<summary><h3 style="display: inline">Question #2</h3></summary>
 <div>
 
 This code doesn’t work as intended.
@@ -188,7 +188,7 @@ int main(void)
 </details>
 
 <details>
-<summary><h2 style="display: inline">Question #3</h2></summary>
+<summary><h3 style="display: inline">Question #3</h3></summary>
 <div>
 
 Look at the following code.
@@ -242,7 +242,7 @@ In the `main.c` file, on what line is the first error that the compiler returns?
 # Tasks
 
 <details>
-<summary><h2 style="display: inline">0. Multiple mains</h2></summary>
+<summary><h3 style="display: inline">0. Multiple mains</h3></summary>
 <div>
 
 `mandatory`
@@ -307,7 +307,7 @@ Repo:
 </details>
 
 <details>
-<summary><h2 style="display: inline">1. Like, comment, subscribe</h2></summary>
+<summary><h3 style="display: inline">1. Like, comment, subscribe</h3></summary>
 <div>
 
 `mandatory`
@@ -361,7 +361,7 @@ Repo:
 </details>
 
 <details>
-<summary><h2 style="display: inline">2. 0 > 972?</h2></summary>
+<summary><h3 style="display: inline">2. 0 > 972?</h3></summary>
 <div>
 
 `mandatory`
@@ -447,7 +447,7 @@ Repo:
 </details>
 
 <details>
-<summary><h2 style="display: inline">3. Leap year</h2></summary>
+<summary><h3 style="display: inline">3. Leap year</h3></summary>
 <div>
 
 `mandatory`
