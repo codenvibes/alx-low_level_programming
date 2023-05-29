@@ -1,7 +1,8 @@
-## **0x05. C - POINTERS, ARRAYS AND STRINGS**
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG)
+# **0x05. C - POINTERS, ARRAYS AND STRINGS**
 
-## Resources
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG" width="500"/>
+
+# Resources
 [Pointers and arrays](https://intranet.alxswe.com/concepts/60)
 
 [Data Structures](https://intranet.alxswe.com/concepts/120)
