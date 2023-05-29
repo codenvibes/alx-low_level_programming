@@ -7,7 +7,7 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 #### 0x02. [C - Functions, nested loops](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
 #### 0x03. [C - Debugging](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x03-debugging)
 #### 0x04. [C - More functions, more nested loops](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
-#### 0x05. [C - Pointers, arrays and strings]()
+#### 0x05. [C - Pointers, arrays and strings](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings)
 #### 0x06. [C - More pointers, arrays and strings]()
 #### 0x07. [C - Even more pointers, arrays and strings]()
 #### 0x08. [C - Recursion]()
