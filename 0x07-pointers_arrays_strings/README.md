@@ -368,7 +368,7 @@ Repo:
 
 ### 2. strchr
 `mandatory`
-<summary>
+</summary>
 
 Write a function that locates a character in a string.
 - Prototype: `char *_strchr(char *s, char c);`
