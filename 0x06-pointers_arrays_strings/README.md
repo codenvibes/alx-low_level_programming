@@ -116,10 +116,10 @@ What happens when one tries to dereference a pointer to NULL?
 </summary>
 
 Why is it important to reserve enough space for an extra character when declaring/allocating a string?
-- [x]For the null byte (end of string)
-- [ ]For fun
-- [ ]For memory alignment
-- [ ]In case we need one
+- [x] For the null byte (end of string)
+- [ ] For fun
+- [ ] For memory alignment
+- [ ] In case we need one
 </details>
 
 <details>
@@ -132,9 +132,9 @@ Why is it important to reserve enough space for an extra character when declarin
 var = "Best";
 ```
 What is the type of `var`?
-- [ ]int *
-- [x]char *
-- [ ]string
+- [ ] int *
+- [x] char *
+- [ ] string
 </details>
 
 # Tasks
