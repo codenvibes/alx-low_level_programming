@@ -537,7 +537,7 @@ julien@ubuntu:~/0x07$
 Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x07-pointers_arrays_strings
-- File: `5-strstr.c`
+- File: [5-strstr.c]()
 </details>
 
 <details>
@@ -589,7 +589,7 @@ julien@ubuntu:~/0x07$
 Repo:
 - GitHub repository: alx-low_level_programming
 - Directory: 0x07-pointers_arrays_strings
-- File: `7-print_chessboard.c`
+- File: [7-print_chessboard.c]()
 </details>
 
 <details>
