@@ -14,14 +14,20 @@ int is_prime_number(int n)
 	if (n <= 1)
 		return (0);
 
-	/* Check for factors up to the square root of n */
-	for (i = 2; i * i <= n; i++)
-	{
-		/*  If n is divisible by i, it's not prime */
-		if (n % i == 0)
-			return (0);
+	i = 2;
 
-	/* If no factors found, n is prime */
-	}
-	return (1);
+	/**
+	 * Recursive base case: if i reaches the square root of n,
+	 * n is prime
+	 */
+	if (i * i > n)
+		return (1);
+
+	/* Recursive case: check divisibility of n by i */
+	if (n % i == 0)
+		/* n is divisible by i, so it's not prime */
+		return (0);
+
+	/* Recursive call: increment i and check divisibility again */
+	return (is_prime_number(n));
 }
