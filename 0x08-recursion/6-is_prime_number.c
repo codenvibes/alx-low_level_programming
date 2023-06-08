@@ -1,33 +1,44 @@
 #include "main.h"
 
+int is_divisible(int num, int div);
+int is_prime_number(int n);
+
 /**
- * is_prime_number - Check if a number is prime.
- * @n: The number to check.
+ * is_divisible - Checks if a number is divisible.
+ * @num: The number to be checked.
+ * @div: The divisor.
  *
- * Return: 1 if prime, 0 otherwise.
+ * Return: If the number is divisible - 0.
+ *         If the number is not divisible - 1.
+ */
+int is_divisible(int num, int div)
+{
+	if (num % div == 0)
+		return (0);
+
+	if (div == num / 2)
+		return (1);
+
+	return (is_divisible(num, div + 1));
+}
+
+/**
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
+ *
+ * Return: If the integer is not prime - 0.
+ *         If the number is prime - 1.
  */
 int is_prime_number(int n)
 {
-	int i;
+	int div = 2;
 
-	/* Numbers less than or equal to 1 are not prime */
 	if (n <= 1)
 		return (0);
 
-	i = 2;
-
-	/**
-	 * Recursive base case: if i reaches the square root of n,
-	 * n is prime
-	 */
-	if (i * i > n)
+	if (n >= 2 && n <= 3)
 		return (1);
 
-	/* Recursive case: check divisibility of n by i */
-	if (n % i == 0)
-		/* n is divisible by i, so it's not prime */
-		return (0);
-
-	/* Recursive call: increment i and check divisibility again */
-	return (is_prime_number(n));
+	return (is_divisible(n, div));
 }
+
