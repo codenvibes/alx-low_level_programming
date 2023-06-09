@@ -20,11 +20,10 @@ man or help:
 - What is a static library, how does it work, how to create one, and how to use it
 - Basic usage of `ar`, `ranlib`, `nm`
 
-<details>
-<summary>
+
 
 # Requirements
-</summary>
+
 
 <details>
 <summary>
@@ -61,7 +60,7 @@ man or help:
 
 You do not need to learn about dynamic libraries, yet.
 </details>
-</details>
+
 
 # Quiz questions
 
