@@ -11,14 +11,30 @@
 
 [What is difference between Dynamic and Static library(Static and Dynamic linking)](https://www.youtube.com/watch?v=eW5he5uFBNM) (stop at 4:44)
 
-man or help:
-- `ar`
-- `ranlib`
-- `nm`
-
 # Learning Objectives
-- What is a static library, how does it work, how to create one, and how to use it
-- Basic usage of `ar`, `ranlib`, `nm`
+<details>
+<summary>
+
+### What is a static library, how does it work, how to create one, and how to use it
+</summary>
+
+**A static library is like a catalog of preassembled LEGO bricks for building spaceships. It stores frequently used bricks (functions or pieces of code) organized into modules. When building a spaceship, the compiler extracts only the required modules from the library and combines them with the program's code to create the final executable. This saves time by reusing code and eliminates the need to search for or rewrite the same code repeatedly.**
+
+When you compile a program that uses a static library, the necessary object code from the library is extracted and merged into the final executable. This means that the code from the library becomes a part of your program, resulting in a standalone executable file.
+
+Static libraries are created by compiling the source code of various functions and modules into object files. These object files are then bundled together into a single library file with a ".a" extension (on Unix-like systems, such as Linux) or a ".lib" extension (on Windows systems). The library file contains the compiled code for the functions and modules, but not the actual implementation details or source code.
+
+Static libraries offer several advantages. They provide a way to reuse common code across multiple projects, reducing duplication and improving maintainability. They also enable faster compilation times since the library code is already compiled, and only the necessary portions are linked into the final executable.
+
+To use a static library in your C program, you typically include the library's header files in your source code and link the library during the compilation process. This ensures that the necessary functions and resources from the library are available to your program at runtime.
+</details>
+
+<details>
+<summary>
+
+### Basic usage of `ar`, `ranlib`, `nm`
+</summary>
+</details>
 
 # Requirements
 
