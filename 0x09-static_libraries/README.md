@@ -27,6 +27,14 @@ Static libraries are created by compiling the source code of various functions a
 Static libraries offer several advantages. They provide a way to reuse common code across multiple projects, reducing duplication and improving maintainability. They also enable faster compilation times since the library code is already compiled, and only the necessary portions are linked into the final executable.
 
 To use a static library in your C program, you typically include the library's header files in your source code and link the library during the compilation process. This ensures that the necessary functions and resources from the library are available to your program at runtime.
+
+Static Libraries:
+- Windows   .lib    (library)
+- Linux     .a      (Archive)
+
+Dynamic Libraries:
+- Windows   .dll    (Dynamic Link Library)
+- Linux     .so     (Shared object)
 </details>
 
 <details>
