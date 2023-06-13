@@ -78,6 +78,34 @@ That's it! You have created a static library `libyourlibrary.a` using `ar` and `
 
 ### Basic usage of `ar`, `ranlib`, `nm`
 </summary>
+
+The `nm` command is used to list the symbols (functions and variables) defined in an object file or a library, including static libraries. When working with static libraries, `nm` can be used to inspect the symbols within the library.
+
+Here's how you can use `nm` with static libraries:
+
+1. List symbols in an object file:
+   To list symbols in an object file, you can simply run `nm` followed by the object file's name. For example:
+   ```shell
+   nm file1.o
+   ```
+   This will display the symbols defined in `file1.o`.
+
+2. List symbols in a static library:
+   To list symbols in a static library, you can run `nm` followed by the library file's name. For example:
+   ```shell
+   nm libyourlibrary.a
+   ```
+   This will display the symbols defined in the `libyourlibrary.a` static library. The output will include symbols from all the object files contained within the library.
+
+   If the library is large or contains many symbols, the output can be quite long. In such cases, you may want to pipe the output to a pager program like `less` for easier navigation:
+   ```shell
+   nm libyourlibrary.a | less
+   ```
+   This allows you to scroll through the symbol list.
+
+   The `nm` output will include symbols such as function names, variable names, and their corresponding memory addresses and types. The symbols can be categorized as external (visible to other compilation units) or internal (local to the object file or library).
+
+The `nm` command provides valuable information about the symbols defined in static libraries, helping you understand the available functions and variables that can be used when linking your programs with the library.
 </details>
 
 # Requirements
