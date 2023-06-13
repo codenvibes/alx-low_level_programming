@@ -15,7 +15,7 @@
 <details>
 <summary>
 
-### What is a static library, how does it work, how to create one, and how to use it
+### What is a static library, how does it work and how to use it
 </summary>
 
 > **A static library is like a catalog of preassembled LEGO bricks for building spaceships. It stores frequently used bricks (functions or pieces of code) organized into modules. When building a spaceship, the compiler extracts only the required modules from the library and combines them with the program's code to create the final executable. This saves time by reusing code and eliminates the need to search for or rewrite the same code repeatedly.**
@@ -35,6 +35,42 @@ Static Libraries:
 Dynamic Libraries:
 - Windows   .dll    (Dynamic Link Library)
 - Linux     .so     (Shared object)
+</details>
+
+<details>
+<summary>
+
+### How to create a Static C Library
+</summary>
+
+To create a static C library using the `ar` and `ranlib` commands, you can follow these steps:
+
+1. Write your C source code files:
+   Create the C source code files that you want to include in your library. Let's say you have two files: `file1.c` and `file2.c`.
+
+2. Compile the source code files into object files:
+   Use the `gcc` compiler to compile each source code file into an object file. Run the following commands for each file:
+   ```shell
+   gcc -c file1.c
+   gcc -c file2.c
+   ```
+   This will produce `file1.o` and `file2.o` object files.
+
+3. Create the archive using `ar`:
+   Use the `ar` command to create an archive file (library) from the object files. Run the following command:
+   ```shell
+   ar rcs libyourlibrary.a file1.o file2.o
+   ```
+   This will create a static library file named `libyourlibrary.a` containing `file1.o` and `file2.o`.
+
+4. Index the library using `ranlib`:
+   Use the `ranlib` command to create an index for the library. Run the following command:
+   ```shell
+   ranlib libyourlibrary.a
+   ```
+   This will add an index to the library file, allowing faster symbol lookup.
+
+That's it! You have created a static library `libyourlibrary.a` using `ar` and `ranlib`. You can now use this library by linking it with other programs during compilation using the `-l` flag followed by the library name (`-lyourlibrary`).
 </details>
 
 <details>
