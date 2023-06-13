@@ -27,10 +27,22 @@ Read or watch:
 <details>
 <summary>
 
-### 
+### Question #0
 </summary>
 
-
+In the following command, what is `argv[2]`?
+```
+$ ./argv "My School" "is fun"
+```
+- [ ] My School
+- [ ] School
+- [ ] ./argv
+- [ ] NULL
+- [x] is fun
+- [ ] fun
+- [ ] My
+- [ ] is
+- [ ] My School is fun
 </details>
 
 <details>
