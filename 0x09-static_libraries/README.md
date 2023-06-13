@@ -200,6 +200,7 @@ What command is used to create a static library from object files?
 - [ ] ranlib
 - [ ] ld
 - [ ] gcc/details>
+</details>
 
 # Tasks
 
