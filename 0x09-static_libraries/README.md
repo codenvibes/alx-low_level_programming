@@ -18,7 +18,7 @@
 ### What is a static library, how does it work, how to create one, and how to use it
 </summary>
 
-**A static library is like a catalog of preassembled LEGO bricks for building spaceships. It stores frequently used bricks (functions or pieces of code) organized into modules. When building a spaceship, the compiler extracts only the required modules from the library and combines them with the program's code to create the final executable. This saves time by reusing code and eliminates the need to search for or rewrite the same code repeatedly.**
+> **A static library is like a catalog of preassembled LEGO bricks for building spaceships. It stores frequently used bricks (functions or pieces of code) organized into modules. When building a spaceship, the compiler extracts only the required modules from the library and combines them with the program's code to create the final executable. This saves time by reusing code and eliminates the need to search for or rewrite the same code repeatedly.**
 
 When you compile a program that uses a static library, the necessary object code from the library is extracted and merged into the final executable. This means that the code from the library becomes a part of your program, resulting in a standalone executable file.
 
