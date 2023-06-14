@@ -61,46 +61,82 @@ What is `argv[0]`
 <details>
 <summary>
 
-### 
+### Question #2
 </summary>
 
-
+What is `argv`?
+- [x] An array of size `argc`
+- [x] An array containing the program command line arguments
+- [ ] An array containing the program compilation flags
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #3
 </summary>
 
-
+What is `argv[argc]`?
+- [ ] The program name
+- [ ] The last command line argument
+- [ ] The first command line argument
+- [ ] It does not always exist
+- [x] NULL
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #4
 </summary>
 
-
+In the following command, what is `argv[2]`?
+```
+$ ./argv "My School is fun"
+```
+- [ ] My School
+- [ ] School
+- [ ] ./argv
+- [x] NULL
+- [ ] is fun
+- [ ] fun
+- [ ] My
+- [ ] is
+- [ ] My School is fun
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #5
 </summary>
 
-
+In the following command, what is `argv[2]`?
+```
+$ ./argv My School is fun
+```
+- [ ] My School
+- [x] School
+- [ ] ./argv
+- [ ] NULL
+- [ ] is fun
+- [ ] fun
+- [ ] My
+- [ ] is
+- [ ] My School is fun
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #6
 </summary>
 
-
+What is `argc`?
+- [x] The size of the `argv` array
+- [ ] The length of the first command line argument
+- [ ] A flag set to 1 when command line arguments are present
+- [x] The number of command line arguments
 </details>
 
 # Tasks
