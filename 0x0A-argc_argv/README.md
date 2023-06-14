@@ -51,19 +51,11 @@ $ ./argv "My School" "is fun"
 ### Question #1
 </summary>
 
-In the following command, what is `argv[2]`?
-```
-$ ./argv "My School" "is fun"
-```
-- [ ] My School
-- [ ] School
-- [ ] ./argv
+What is `argv[0]`
+- [ ] The first command line argument
+- [x] The program name
+- [ ] It does not always exist
 - [ ] NULL
-- [x] is fun
-- [ ] fun
-- [ ] My
-- [ ] is
-- [ ] My School is fun
 </details>
 
 <details>
