@@ -11,8 +11,7 @@ Read or watch:
 
 <details>
 <summary>
-
-[how to compile with unused variables]()
+<a>how to compile with unused variables</a>
 </summary>
 
 In C, unused variables can sometimes generate warnings during the compilation process. These warnings are typically displayed to alert the programmer about potentially unnecessary variables that are not being used in the code. However, if you want to compile your code without generating warnings for unused variables, you can use specific compiler flags or directives depending on the compiler you are using. Here are a few common methods:
