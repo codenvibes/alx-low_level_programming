@@ -9,7 +9,40 @@ Read or watch:
 
 [What does argc and argv mean?](https://www.youtube.com/watch?v=aP1ijjeZc24)
 
+<details>
+<summary>
+
 [how to compile with unused variables]()
+</summary>
+
+In C, unused variables can sometimes generate warnings during the compilation process. These warnings are typically displayed to alert the programmer about potentially unnecessary variables that are not being used in the code. However, if you want to compile your code without generating warnings for unused variables, you can use specific compiler flags or directives depending on the compiler you are using. Here are a few common methods:
+
+1. Disable warnings for unused variables using compiler flags:
+   - For GCC: Use the `-Wno-unused-variable` flag during compilation to disable warnings specifically for unused variables.
+   ```
+   gcc -Wno-unused-variable yourfile.c -o yourprogram
+   ```
+   - For Clang: Use the `-Wno-unused-variable` flag to disable warnings for unused variables.
+   ```
+   clang -Wno-unused-variable yourfile.c -o yourprogram
+   ```
+
+2. Use pragmas or directives within your code:
+   - For GCC or Clang: You can use the `__attribute__((unused))` directive before a variable declaration to indicate that the variable may be unused intentionally, suppressing the warning.
+   ```c
+   int unused_variable __attribute__((unused));
+   ```
+
+3. Assign a value or use the variable:
+   - You can assign a value to the variable or use it in some way within your code to prevent the compiler from generating the warning. For example, you can use a dummy assignment:
+   ```c
+   int unused_variable;
+   // ...
+   unused_variable = 0;
+   ```
+
+It's worth noting that while disabling warnings for unused variables can be useful in certain scenarios, it's generally considered good practice to remove or properly utilize unused variables to ensure clean and maintainable code.
+</details>
 
 # Learning Objectives
 - How to use arguments passed to your program
