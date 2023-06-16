@@ -14,7 +14,7 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 #### 0x09. [C - Static libraries](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x09-static_libraries)
 #### 0x0A. [C - argc, argv](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x0A-argc_argv)
 #### 0x0B. [C - malloc, free](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x0B-malloc_free)
-#### 0x0C. [C-more_malloc_free]()
+#### 0x0C. [C-more_malloc_free](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x0C-more_malloc_free)
 #### 0x0D. [C - Preprocessor]()
 #### 0x0E. [C - Structures, typedef]()
 #### 0x0F. [C - Function pointers]()
