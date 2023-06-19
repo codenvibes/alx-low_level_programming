@@ -172,21 +172,24 @@ int main(void)
     return (EXIT_SUCCESS);
 }
 ```
--   ```
+- [ ]
+    ```
     int main(void)
     {
     ((void *)0);
     return (0);
     }
     ```
--   ```
+- [ ]
+    ```
     int main(void)
     {
     '\0';
     return (0);
     }
     ```
--   ```
+- [ ]
+    ```
     int main()
     {
     0;
