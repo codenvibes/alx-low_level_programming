@@ -74,26 +74,53 @@ point p = { .y = 2, .x = 1 };
 <details>
 <summary>
 
-### 
+### Question #1
 </summary>
 
-
+The general syntax for a struct declaration in C is:
+```
+struct tag_name {
+   type member1;
+   type member2;
+   /* declare as many members as desired, but the entire structure size must be known to the compiler. */
+};
+```
+- Maybe
+- False
+- True
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #2
 </summary>
 
-
+Given this code:
+```
+struct point {
+   int x;
+   int y;
+};
+struct point my_point = { 3, 7 };
+struct point *p = &my_point;
+```
+To set the member y of my variable my_point to 98, I can do (select all valid answers):
+- [x] (*p).y = 98;
+- [x] p->y = 98;
+- [ ] p.y = 98;
+- [ ] my_point->y = 98;
+- [x] my_point.y = 98;
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #3
 </summary>
 
-
+You should write documentation for all the structures you create
+- [x] As soon as I write my structure.
+- [ ] I’ll do it 5 minutes before the deadline when I try Betty on my header file
+- [x] True
 </details>
