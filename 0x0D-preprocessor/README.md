@@ -1,23 +1,21 @@
 # **0x0D. C - PREPROCESSOR** <code> C </code>
 
-
 # Resources
+[Understanding C program Compilation Process](https://www.youtube.com/watch?v=eW5he5uFBNM)
 
-[Understanding C program Compilation Process]()
+[Object-like Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
 
-[Object-like Macros]()
+[Macro Arguments](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments)
 
-[Macro Arguments]()
+[Pre Processor Directives in C](https://www.youtube.com/watch?v=X6HiYbY3Uak)
 
-[Pre Processor Directives in C]()
+[The C Preprocessor](https://www.cprogramming.com/tutorial/cpreprocessor.html)
 
-[The C Preprocessor]()
+[Standard Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
 
-[Standard Predefined Macros]()
+[include guard](https://en.wikipedia.org/wiki/Include_guard)
 
-[include guard]()
-
-[Common Predefined Macros]()
+[Common Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros)
 
 # Learning Objectives
 What are macros and how to use them
