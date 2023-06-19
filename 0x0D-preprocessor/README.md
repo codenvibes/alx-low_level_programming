@@ -43,3 +43,57 @@ In the following examples, the main.c files are shown as examples. You can use t
 - All your header files should be include guarded
 
 # Quiz questions
+<details>
+<summary>
+
+### Question #0
+</summary>
+
+Those two codes do the same thing:
+```
+typedef struct point point;
+struct point {
+   int    x;
+   int    y;
+};
+point p = {1, 2};
+```
+```
+typedef struct point point;
+struct point {
+   int    x;
+   int    y;
+};
+point p = { .y = 2, .x = 1 };
+```
+- [ ] False: the members of the structures will not have the same values
+- [ ] False: the second does not compile
+- [x] True
+</details>
+
+<details>
+<summary>
+
+### 
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+
+### 
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+
+### 
+</summary>
+
+
+</details>
