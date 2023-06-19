@@ -1,22 +1,23 @@
 # 0x0E. C - STRUCTURES, TYPEDEF <code> C </code>
+
 # Resources
-[0x0d. Structures.pdf]()
+[0x0d. Structures.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/6eb80c79c99f6125450a0dc11b300d46238d1a5a.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230619T123548Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c7db1897e89ef469750bbc07191645d2daebe33602250ba5df0d29f85b4d6d39)
 
-[struct (C programming language)]()
+[struct (C programming language)](https://en.wikipedia.org/wiki/Struct_(C_programming_language))
 
-[Documentation: structures]()
+[Documentation: structures](https://github.com/alx-tools/Betty/wiki/Documentation:-Data-structures)
 
-[0x0d. Typedef and structures.pdf]()
+[0x0d. Typedef and structures.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2021/1/c8ff3e6f7202be7fa489a584e41d005504a07c23.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230619T123649Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4fe4a148ec3f518a1a4d6a2a7597af1f746fb18228fbd4cf060aea893c2e3394)
 
-[typedef]()
+[typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html)
 
 **Programming in C** by Stephen Kochan - Chapter 8, Working with Structures p163-189
 
-[The Lost Art of C Structure Packing]()(Advanced - not mandatory)
+[The Lost Art of C Structure Packing](http://www.catb.org/esr/structure-packing/)(Advanced - not mandatory)
 
 # Learning Objectives
-- What are structures, when, why and how to use them
-- How to use `typedef`
+What are structures, when, why and how to use them
+How to use `typedef`
 
 # Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
