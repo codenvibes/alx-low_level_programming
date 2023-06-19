@@ -172,7 +172,7 @@ int main(void)
     return (EXIT_SUCCESS);
 }
 ```
-- [ ]
+- [x]
     ```
     int main(void)
     {
@@ -209,55 +209,95 @@ int main(void)
 <details>
 <summary>
 
-### 
+### Question #9
 </summary>
 
-
+What is the `gcc` option that runs only the preprocessor?
+- [ ] -P
+- [ ] -preprocessor
+- [ ] -pedantic
+- [x] -E
+- [ ] -p
+- [ ] -cisfun
+- [ ] -a
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #10
 </summary>
 
-
+`NULL` is a macro
+- [ ] False
+- [x] True
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #11
 </summary>
 
+What will be the output of this program? (on a standard 64 bits, Linux machine)
+```
+#include <stdio.h>
+#include <stdlib.h>
 
+#define int char
+
+int main(void)
+{
+    int i;
+
+    i = 5;
+    printf ("sizeof(i) = %lu", sizeof(i));
+    return (EXIT_SUCCESS);
+}
+```
+- [ ] It does not compile
+- [x] sizeof(i) = 1
+- [ ] sizeof(i) = 5
+- [ ] sizeof(i) = 4
+- [ ] sizeof(i) = 8
+- [ ] Segmentation Fault
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #12
 </summary>
 
-
+This portion of code is actually using the library stdlib.
+```
+#include <stdlib.h>
+```
+- [x] False
+- [ ] True
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #13
 </summary>
 
-
+What are the steps of compilation?
+- [ ] preprocessor 2.compiler 3. linker 4. assembler
+- [x] preprocessor 2.compiler 3. assembler 4. linker
+- [ ] compiler 2. preprocessor 3. assembler 4. linker
 </details>
 
 <details>
 <summary>
 
-### 
+### Question #14
 </summary>
 
-
+Why should we use include guards in our header files?
+- [x] To avoid the problem of double inclusion when dealing with the include directive.
+- [ ] Because we said so, and we should never ask why.
 </details>
 
 
