@@ -306,7 +306,7 @@ Why should we use include guards in our header files?
 ### 0. Object-like Macro
 `mandatory`
 
-File: [0-object_like_macro.h]()
+File: [0-object_like_macro.h](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x0D-preprocessor/0-object_like_macro.h)
 </summary>
 
 Create a header file that defines a macro named `SIZE` as an abbreviation for the token `1024`.
