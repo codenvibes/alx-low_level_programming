@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * init_dog - initialize struct dog datat type.
+ * init_dog - Initializes a dog structure.
  *
- * @d: dog struct
- * @name: name of dog.
- * @age: age of dog.
- * @owner: owner of dog.
+ * @d: Pointer to the dog structure to be initialized.
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The name of the owner.
  *
  * Return: Always 0.
  */
