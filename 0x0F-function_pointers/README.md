@@ -7,6 +7,8 @@
 
 [Function Pointers in C / C++](https://www.youtube.com/watch?v=ynYtgGUNelE)
 
+[Use cases of functon pointers](https://www.youtube.com/watch?v=sxTFSDAZM8s)
+
 [why pointers to functions?](https://www.youtube.com/watch?v=sxTFSDAZM8s&feature=youtu.be)
 
 [Everything you need to know about pointers in C](https://boredzo.org/pointers/)
