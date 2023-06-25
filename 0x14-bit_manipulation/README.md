@@ -293,7 +293,7 @@ What is `0x89` in base10?
 ### 0. 0
 `mandatory`
 
-File: [0-binary_to_uint.c- ]()
+File: [0-binary_to_uint.c]()
 </summary>
 
 Write a function that converts a binary number to an unsigned int.
@@ -637,7 +637,7 @@ julien@ubuntu:~/0x14. Binary$
 ### 7. Crackme3
 `#advanced`
 
-File: [101-password]()
+File: [101-password](https://github.com/alx-tools/0x13.c)
 </summary>
 
 Find the password for [this program]().
