@@ -143,8 +143,7 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 - [ ] Segmentation fault
 - [ ] Nothing
 
-> Tips:
-    Just try it! :)
+> Tips: Just try it! :)
 </details>
 
 <details>
