@@ -697,7 +697,7 @@ julien@ubuntu:~/0x13. More singly linked lists$
 ### 10. Delete at index
 `mandatory`
 
-File: 10-delete_nodeint.c]()
+File: [10-delete_nodeint.c]()
 </summary>
 
 Write a function that deletes the node at `index` index of a `listint_t` linked list.
