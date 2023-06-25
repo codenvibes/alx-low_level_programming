@@ -57,3 +57,73 @@ typedef struct list_s
     struct list_s *next;
 } list_t;
 ```
+
+# Quiz questions
+<details>
+<summary>
+
+### Question #0
+</summary>
+
+What’s the “tail” of a linked list?
+- [ ] It’s the node with the highest value
+- [ ] It’s the node with the lowest value
+- [ ] It’s the first node
+- [x] It’s the node with the pointer to the next equals to `NULL`
+</details>
+
+<details>
+<summary>
+
+### Question #1
+</summary>
+
+What’s the “head” of a linked list?
+- [ ] It’s the node with the lowest value
+- [ ] It’s the node with the pointer to the next equals to `NULL`
+- [x] It’s the first node
+- [ ] It’s the node with the highest value
+- [ ] It’s the last node
+</details>
+
+<details>
+<summary>
+
+### Question #2
+</summary>
+
+In a singly linked list, what are possible directions to traverse it? (select all possible answers)
+- [ ] Backward
+- [x] Forward
+</details>
+
+<details>
+<summary>
+
+### Question #3
+</summary>
+
+Arrays Vs Linked Lists: select all true statements
+- [x] Array can contain as value a structure
+- [ ] We can add elements indefinitely to an array
+- [x] Memory is aligned for an Array - each elements are back to back in the memory
+- [ ] We can easily remove an element from an Array
+- [ ] Memory is aligned for a Linked list - each elements are back to back in the memory
+- [x] Linked list can contain as value a structure
+- [x] We can easily removed an element from a Linked list
+- [x] We can add elements indefinitely to a linked list
+</details>
+
+<details>
+<summary>
+
+### Question #4
+</summary>
+
+What’s a node? (select all possible answers)
+- [ ] It’s an integer
+- [x] It’s a space allocated in memory
+- [ ] It’s a cell in an array
+- [x] It’s a structure with a pointer to the next node and value information
+- [ ] It’s a server
+</details>
