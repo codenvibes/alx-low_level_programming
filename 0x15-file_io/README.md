@@ -152,7 +152,10 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #7
 </summary>
 
-
+What is the `oflag` used to open a file with the mode read only?
+- [ ] `O_RDWR`
+- [x] `O_RDONLY`
+- [ ] `O_WRONLY`
 </details>
 
 <details>
@@ -161,7 +164,12 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #8
 </summary>
 
-
+Without context, on Ubuntu 14.04 LTS, `write` is a … (please select all correct answers):
+- [ ] game
+- [ ] kernel routine
+- [ ] library call
+- [x] system call
+- [x] executable
 </details>
 
 <details>
@@ -170,7 +178,12 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #9
 </summary>
 
-
+is `open` a function or a system call? (select all valid answers)
+- [x] it’s a function provided by the kernel
+- [ ] it’s a kernel routine
+- [ ] it’s a library call
+- [x] it’s a system call
+- [x] it’s a function
 </details>
 
 <details>
@@ -179,7 +192,10 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #10
 </summary>
 
-
+What system call would you use to write to a file descriptor? (select all correct answers)
+- [x] write
+- [ ] fprintf
+- [ ] printf
 </details>
 
 <details>
@@ -188,7 +204,9 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #11
 </summary>
 
-
+When I am using `O_WRONLY | O_CREAT | O_APPEND` -> the | are bitwise operators.
+- [ ] False
+- [x] True
 </details>
 
 <details>
@@ -197,7 +215,10 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #12
 </summary>
 
-
+What is the `oflag` used to open a file in mode read + write?
+- [x] `O_RDWR`
+- [ ] `O_RDONLY`
+- [ ] `O_WRONLY`
 </details>
 
 <details>
@@ -206,7 +227,10 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #13
 </summary>
 
-
+What is the `unistd` symbolic constant for the standard input?
+- [ ] STDERR_FILENO
+- [ ] STDOUT_FILENO
+- [x] STDIN_FILENO
 </details>
 
 <details>
@@ -215,7 +239,25 @@ What happens if you try to write “Best” to the standard input on Ubuntu 14.0
 ### Question #14
 </summary>
 
+Which of these answers are the equivalent of O_RDWR on Ubuntu 14.04 LTS? (select all correct answers):
+- [ ] 1
+- [ ] (O_RDONLY && O_WRONLY)
+- [x] (O_WRONLY << 1)
+- [ ] (O_RDONLY & O_WRONLY)
+- [ ] O_RDONLY
+- [ ] (O_RDONLY << 1)
+- [ ] (O_RDONLY | O_WRONLY)
+- [x] 1 << 1
+- [ ] O_WRONLY
+- [ ] 3 | 2
+- [ ] 3
+- [x] 2
+- [ ] (O_RDONLY + O_WRONLY)
+- [x] 3 & 2
+- [ ] 0
 
+> Tips: 
+Use printf or read the headers to see the definitions/values of these macros.
 </details>
 
 # Tasks
