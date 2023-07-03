@@ -1,4 +1,4 @@
-/**
+/*
  * File: lists.h
  * Auth: Terrence M.K
  * Description: Header file containing prototype declarations for all functions
