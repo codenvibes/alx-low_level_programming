@@ -2,7 +2,7 @@
  * File: lists.h
  * Auth: Terrence M.K
  * Description: Header file containing prototype declarations for all functions
- *		used in the 0x12-more_singly_linked_lists directory.
+ *		used in the 0x13-more_singly_linked_lists directory.
  */
 
 #ifndef LISTS_H
