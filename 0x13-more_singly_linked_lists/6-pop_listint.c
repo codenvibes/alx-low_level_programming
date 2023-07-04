@@ -1,3 +1,8 @@
+/*
+ * File: 6-pop_listint.c
+ * Auth: Terrence M.K
+ */
+
 #include "lists.h"
 
 /**
