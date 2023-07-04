@@ -1,3 +1,8 @@
+/*
+ * File: 7-get_nodeint.c
+ * Auth: Terrence M.K
+ */
+
 #include "lists.h"
 
 /**
