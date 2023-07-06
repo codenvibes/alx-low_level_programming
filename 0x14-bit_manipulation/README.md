@@ -32,6 +32,8 @@ How to manipulate bits and use bitwise operators
 </details>
 
 # Notes
+<img src="https://camo.githubusercontent.com/d63ab8b391579cb9574e4a487de2f04cb9ed4bda7008d6c3c37d90ce903b2bb5/68747470733a2f2f6d656469612e6765656b73666f726765656b732e6f72672f77702d636f6e74656e742f63646e2d75706c6f6164732f4f70657261746f72732d496e2d432e706e67"/>
+
 [C – Bit wise Operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-bit-wise-operators/)
 
 
