@@ -646,7 +646,7 @@ julien@ubuntu:~/0x14. Binary$
 File: [101-password](https://github.com/alx-tools/0x13.c)
 </summary>
 
-Find the password for [this program]().
+Find the password for [this program](https://github.com/alx-tools/0x13.c).
 - Save the password in the file `101-password`
 - Your file should contain the exact password, no new line, no extra space
 ```
