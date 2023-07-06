@@ -31,6 +31,10 @@ How to manipulate bits and use bitwise operators
 - All your header files should be include guarded
 </details>
 
+# Notes
+[C – Bit wise Operators](https://www.fresh2refresh.com/c-programming/c-operators-expressions/c-bit-wise-operators/)
+
+
 # Quiz questions
 <details>
 <summary>
