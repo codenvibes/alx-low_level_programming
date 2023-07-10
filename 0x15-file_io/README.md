@@ -3,9 +3,9 @@
 `Syscall`
 
 # Resources
-[File descriptors]()
+[File descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 
-[C Programming in Linux Tutorial #024 - open() read() write() Functions]()
+[C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=e-srF6c3TJ8)
 
 man or help:
 - `open`
