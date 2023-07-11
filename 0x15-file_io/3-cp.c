@@ -1,3 +1,8 @@
+/*
+ * File: 3-cp.c
+ * Auth: Terrence M.K
+ */
+
 #include "main.h"
 #define BUF_SIZE 1024
 
