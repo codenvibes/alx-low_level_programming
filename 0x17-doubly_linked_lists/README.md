@@ -10,10 +10,195 @@
 # Learning Objectives
 <details>
 <summary><h3>What is a doubly linked list</h3></summary><br>
+
+A doubly linked list is a data structure used in computer programming to organize a collection of elements in a linear order. Unlike a singly linked list, where each element (node) contains a value and a reference to the next node, a doubly linked list's nodes contain references to both the next and the previous nodes. This bidirectional linkage allows for more flexible traversal in both directions.
+
+Here's a basic structure of a doubly linked list node in C:
+
+```c
+struct Node {
+    int data;
+    struct Node* prev;
+    struct Node* next;
+};
+```
+
+In the `struct Node`, `data` represents the value stored in the node, `prev` is a pointer to the previous node in the list, and `next` is a pointer to the next node in the list.
+
+Here's a simple example of how you might create, insert, and traverse a doubly linked list in C:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* prev;
+    struct Node* next;
+};
+
+struct Node* createNode(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+    return newNode;
+}
+
+void insertAtEnd(struct Node** head, int data) {
+    struct Node* newNode = createNode(data);
+    if (*head == NULL) {
+        *head = newNode;
+        return;
+    }
+    
+    struct Node* current = *head;
+    while (current->next != NULL) {
+        current = current->next;
+    }
+    
+    current->next = newNode;
+    newNode->prev = current;
+}
+
+void printList(struct Node* head) {
+    struct Node* current = head;
+    while (current != NULL) {
+        printf("%d ", current->data);
+        current = current->next;
+    }
+    printf("\n");
+}
+
+int main() {
+    struct Node* head = NULL;
+    
+    insertAtEnd(&head, 1);
+    insertAtEnd(&head, 2);
+    insertAtEnd(&head, 3);
+    
+    printf("Doubly Linked List: ");
+    printList(head);
+    
+    return 0;
+}
+```
+
+In this example, the `createNode` function creates a new node, the `insertAtEnd` function adds a new node to the end of the list, and the `printList` function traverses and prints the elements in the list.
+
+Doubly linked lists are useful when you need efficient traversal in both directions and for operations like inserting or deleting elements near a given position. However, they use slightly more memory due to the additional previous pointers in each node.
 </details>
 
 <details>
 <summary><h3>How to use doubly linked lists</h3></summary><br>
+
+Using a doubly linked list involves creating, manipulating, and managing the linked list operations. Let's go through some common operations you might perform with a doubly linked list in C:
+
+1. **Creating a Node**:
+
+   You start by defining a node structure and then creating nodes using the structure. Each node will have data, a pointer to the previous node (`prev`), and a pointer to the next node (`next`).
+
+   ```c
+   struct Node {
+       int data;
+       struct Node* prev;
+       struct Node* next;
+   };
+   ```
+
+2. **Inserting Nodes**:
+
+   You can insert nodes at the beginning, end, or anywhere in between the list.
+
+   - Insert at the beginning:
+     ```c
+     struct Node* newNode = createNode(data);
+     newNode->next = head;
+     if (head != NULL) {
+         head->prev = newNode;
+     }
+     head = newNode;
+     ```
+
+   - Insert at the end:
+     ```c
+     struct Node* newNode = createNode(data);
+     if (head == NULL) {
+         head = newNode;
+     } else {
+         struct Node* current = head;
+         while (current->next != NULL) {
+             current = current->next;
+         }
+         current->next = newNode;
+         newNode->prev = current;
+     }
+     ```
+
+   - Insert after a given node:
+     ```c
+     struct Node* newNode = createNode(data);
+     newNode->prev = givenNode;
+     newNode->next = givenNode->next;
+     if (givenNode->next != NULL) {
+         givenNode->next->prev = newNode;
+     }
+     givenNode->next = newNode;
+     ```
+
+3. **Deleting Nodes**:
+
+   Nodes can be deleted based on their value or position.
+
+   - Delete a specific node:
+     ```c
+     if (nodeToDelete->prev != NULL) {
+         nodeToDelete->prev->next = nodeToDelete->next;
+     }
+     if (nodeToDelete->next != NULL) {
+         nodeToDelete->next->prev = nodeToDelete->prev;
+     }
+     free(nodeToDelete);
+     ```
+
+4. **Traversing the List**:
+
+   You can traverse the list in both forward and backward directions.
+
+   - Forward traversal:
+     ```c
+     struct Node* current = head;
+     while (current != NULL) {
+         // Do something with current->data
+         current = current->next;
+     }
+     ```
+
+   - Backward traversal:
+     ```c
+     struct Node* current = tail; // tail points to the last node
+     while (current != NULL) {
+         // Do something with current->data
+         current = current->prev;
+     }
+     ```
+
+5. **Freeing Memory**:
+
+   Don't forget to free the memory occupied by the nodes when you're done with the linked list:
+
+   ```c
+   void freeList(struct Node* head) {
+       struct Node* current = head;
+       while (current != NULL) {
+           struct Node* temp = current;
+           current = current->next;
+           free(temp);
+       }
+   }
+   ```
+
+Remember that this is just a basic overview of how to use a doubly linked list. Depending on your specific use case, you might need to implement additional operations or optimizations. Always be mindful of memory allocation and deallocation to avoid memory leaks.
 </details>
 
 # Requirements
