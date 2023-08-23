@@ -25,6 +25,7 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 #### 0x15. [C - File I/O](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x15-file_io)
 #### 0x17. [C - Doubly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)
 #### 0x18. [C - Dynamic libraries](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x18-dynamic_libraries)
+#### 0x19. [C - Stacks, Queues - LIFO, FIFO](https://github.com/codenvibes/monty)
 
 ## Acknowledgements🫂:
 
