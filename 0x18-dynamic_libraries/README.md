@@ -10,19 +10,167 @@
 
 # Learning Objectives
 <details>
-<summary><h3>What is a dynamic library, how does it work, how to create one, and how to use it</h3></summary><br>
+<summary><h3>What is a dynamic library, how does it work, how to create one, and how to use it</h3></summary>
+
+A dynamic library, also known as a shared library, is a collection of code and data that can be used by multiple programs simultaneously. It contains functions, classes, and other code that can be linked to a program at runtime, rather than being compiled directly into the program's executable file. This allows for code reuse, efficient memory usage, and easier updates to the shared functionality without recompiling every program that uses it.
+
+Here's how a dynamic library works:
+
+1. **Compilation**: The code that you want to include in the dynamic library is compiled and linked into a separate file with a `.so` extension (on Linux/Unix) or a `.dll` extension (on Windows). This generates a dynamic library file that contains the compiled machine code.
+
+2. **Linking**: When you compile your program that uses the dynamic library, the compiler only includes references to the functions and symbols from the library, not the actual code itself. The program's executable file contains placeholders for these references.
+
+3. **Loading**: When the program is run, the operating system loader (such as the dynamic linker on Unix-like systems) locates and loads the dynamic library into memory. This is often done using the `dlopen()` function on Unix-like systems.
+
+4. **Symbol Resolution**: The operating system resolves the references in the program's executable to the actual code addresses in the loaded dynamic library. This allows the program to access the functions and data from the library.
+
+5. **Execution**: The program can now use the functions and data from the dynamic library as if they were part of the program's code. The dynamic library remains loaded in memory as long as there are programs using it.
+
+To create and use a dynamic library in C:
+
+**Creating a Dynamic Library:**
+
+1. Write the code you want to include in the dynamic library.
+2. Compile the code into a dynamic library using appropriate compiler flags. On Linux/Unix, this can be done using `gcc -shared -o libexample.so example.c`.
+
+**Using a Dynamic Library:**
+
+1. Write the code for your main program.
+2. Compile the main program, including references to the functions from the dynamic library, using appropriate compiler flags. On Linux/Unix, this can be done using `gcc -o main main.c -L. -lexample`.
+
+Here, `-L.` specifies that the compiler should look for libraries in the current directory, and `-lexample` tells it to link against `libexample.so` (or `libexample.dll` on Windows).
+
+3. When you run the main program, the dynamic library will be loaded automatically, and your program will be able to use the functions from the library.
+
+Remember that the specific steps and commands can vary based on your development environment and operating system. It's also important to manage things like versioning and dependencies properly when working with dynamic libraries.
 </details>
 
 <details>
-<summary><h3>What is the environment variable <code>$LD_LIBRARY_PATH</code> and how to use it</h3></summary><br>
+<summary><h3>What is the environment variable <code>$LD_LIBRARY_PATH</code> and how to use it</h3></summary>
+
+The `$LD_LIBRARY_PATH` environment variable is a variable used in Unix-like operating systems (such as Linux) to specify directories where the system should look for shared libraries before searching the default system paths. Shared libraries (dynamic libraries) are files containing compiled code that can be loaded and used by programs at runtime. By setting the `$LD_LIBRARY_PATH`, you can control where the system searches for these libraries when executing programs.
+
+Here's how to use the `$LD_LIBRARY_PATH` environment variable:
+
+1. **Setting the Environment Variable:**
+
+   To set the `$LD_LIBRARY_PATH` environment variable, you can use the terminal. Open a terminal and use the following command:
+
+   ```bash
+   export LD_LIBRARY_PATH=/path/to/your/library/directory:$LD_LIBRARY_PATH
+   ```
+
+   Replace `/path/to/your/library/directory` with the actual path to the directory containing your shared library files. The `$LD_LIBRARY_PATH` variable can contain multiple paths separated by colons (`:`). The use of `$LD_LIBRARY_PATH` is temporary and affects the current shell session only.
+
+2. **Using the Environment Variable:**
+
+   After setting the `$LD_LIBRARY_PATH` variable, any program you run from the same terminal session will first search for shared libraries in the paths specified in this variable before looking in the system's default library paths.
+
+   For example, if you have a program named `my_program` that uses a shared library named `libexample.so`, and you've set the `$LD_LIBRARY_PATH` to include the directory containing `libexample.so`, running `my_program` will use the shared library from the specified path.
+
+3. **Using in Compilation:**
+
+   When compiling a program that uses a dynamic library, you can also provide the library search path using the `-L` flag followed by the path. This can be helpful when you don't want to modify the `$LD_LIBRARY_PATH` globally. For example:
+
+   ```bash
+   gcc -o my_program my_program.c -L/path/to/library/directory -lexample
+   ```
+
+   This tells the compiler to look for libraries in the specified directory and link against the library named `libexample.so`.
+
+Remember that setting `$LD_LIBRARY_PATH` globally for all programs is not always recommended, as it can potentially lead to conflicts and compatibility issues between different programs. It's generally better to use this variable selectively when needed, or use the `-L` flag during compilation.
+
+Additionally, there are some security considerations when using `$LD_LIBRARY_PATH`, as it can potentially be exploited by malicious users. Therefore, it's important to be cautious when modifying this variable and only use it in controlled environments.
 </details>
 
 <details>
-<summary><h3>What are the differences between static and shared libraries</h3></summary><br>
+<summary><h3>What are the differences between static and shared libraries</h3></summary>
+
+Static and shared libraries are two different ways of packaging and distributing code that can be used by programs. They have distinct advantages and disadvantages, and understanding their differences is important when deciding which approach to use.
+
+**Static Libraries:**
+
+1. **Compilation and Size:**
+   - Static libraries are compiled into the final executable at compile time. This means that the code from the static library is copied into the executable itself.
+   - This can result in larger executable files because each program using the library includes its own copy of the library's code.
+
+2. **Independence:**
+   - The static library becomes an integral part of the executable. It doesn't rely on external files or dependencies when the program runs.
+   - This can lead to easier distribution of a single executable without worrying about sharing external library files.
+
+3. **Isolation:**
+   - Since each program has its own copy of the library's code, changes to the library won't affect already compiled programs.
+   - This can be useful for ensuring stability in complex software ecosystems.
+
+4. **Ease of Deployment:**
+   - Distributing a program with a static library requires providing a single executable file without any external dependencies.
+   - However, if multiple programs use the same static library, there's duplication of code across all these programs, leading to larger overall file sizes.
+
+**Shared Libraries (Dynamic Libraries):**
+
+1. **Compilation and Size:**
+   - Shared libraries are compiled separately and remain as standalone files (e.g., `.so` on Linux/Unix, `.dll` on Windows).
+   - Programs that use shared libraries reference these external files without including the library code within the executable.
+   - This results in smaller executable files since they don't contain the library code.
+
+2. **Independence:**
+   - Shared libraries are external to the executable. Programs using shared libraries require the library files to be present on the system where they're run.
+   - This can lead to version compatibility concerns and dependency management.
+
+3. **Efficiency:**
+   - Since multiple programs can share a single copy of a shared library, there's a potential for better memory usage. The library code is loaded into memory only once.
+
+4. **Updates and Maintenance:**
+   - Updates to shared libraries are reflected in all programs using the library, avoiding the need to recompile every program that uses it.
+   - This can simplify maintenance and bug fixes, but it also requires careful versioning to avoid breaking existing programs.
+
+5. **Flexibility:**
+   - Shared libraries can be updated independently, making it easier to provide bug fixes or add new features to shared functionality.
+
+In summary, static libraries offer simplicity and independence but can result in larger executable sizes and code duplication. Shared libraries provide efficiency and easier maintenance, but they require careful version management and can introduce external dependency concerns. The choice between static and shared libraries depends on factors like code reusability, distribution needs, efficiency, and version management strategies.
 </details>
 
 <details>
-<summary><h3>Basic usage <code>nm</code>, <code>ldd</code>, <code>ldconfig</code></h3></summary><br>
+<summary><h3>Basic usage <code>nm</code>, <code>ldd</code>, <code>ldconfig</code></h3></summary>
+
+`nm`, `ldd`, and `ldconfig` are command-line tools commonly used on Unix-like operating systems to inspect and manage dynamic libraries. They provide various ways to analyze, list, and configure libraries on your system. Here's a brief overview of each tool's basic usage:
+
+1. **`nm` - Symbol Table Display Utility:**
+   `nm` is used to display the symbols (functions, variables, etc.) contained in an object file or an executable. It's particularly useful for examining the symbols within dynamic libraries.
+
+   Usage example:
+   ```bash
+   nm -D libexample.so
+   ```
+   This command lists the symbols in the `libexample.so` shared library, showing whether they are defined, undefined, or dynamic.
+
+2. **`ldd` - List Dynamic Dependencies:**
+   `ldd` is used to show the shared libraries that an executable or a shared library depends on. It's helpful to identify the runtime dependencies of a program.
+
+   Usage example:
+   ```bash
+   ldd ./my_program
+   ```
+   This command lists the shared libraries required by `my_program` and also shows their absolute paths. If a library is not found, it will be indicated as "not found" or "not a dynamic executable."
+
+3. **`ldconfig` - Dynamic Linker Run-Time Cache Configuration:**
+   `ldconfig` updates the runtime linker cache, which is a system-wide database used by the dynamic linker to locate shared libraries. It's used after installing new shared libraries or updating the library cache.
+
+   Usage examples:
+   - To refresh the cache after adding new libraries:
+     ```bash
+     sudo ldconfig
+     ```
+   - To specify additional library paths to be included in the cache:
+     ```bash
+     echo "/path/to/your/library" | sudo tee /etc/ld.so.conf.d/my_library.conf
+     sudo ldconfig
+     ```
+     This will add `/path/to/your/library` to the list of paths the dynamic linker searches.
+
+Remember to replace placeholders like `libexample.so`, `./my_program`, and `/path/to/your/library` with the actual paths and filenames relevant to your use case.
+
+These tools are particularly useful when dealing with shared libraries, diagnosing dependency issues, and ensuring that your programs can locate the required libraries at runtime.
 </details>
 
 # Requirements
