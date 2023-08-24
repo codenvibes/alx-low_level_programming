@@ -211,10 +211,10 @@ These tools are particularly useful when dealing with shared libraries, diagnosi
 `mandatory`
 
 File: [libdynamic.so](), [main.h]()
-> `gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -ldynamic -o len` : 
-   - `-L.`: This flag specifies a directory where the linker should look for libraries. In this case, the dot (`.`) represents the current directory. So, `-L.` tells the linker to look for libraries in the current directory.
-   - `-ldynamic`: This flag tells the linker to link against a library named `libdynamic.so.` The `-l` flag is used to specify a library name without the "lib" prefix and the ".so" extension.
-   - So, the overall command is telling the compiler to compile `0-main.c`, link it against the `libdynamic.so` library (assuming it's in the current directory), and produce an executable named `len`.
+> `gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -ldynamic -o len` : <br>
+   > - `-L.`: This flag specifies a directory where the linker should look for libraries. In this case, the dot (`.`) represents the current directory. So, `-L.` tells the linker to look for libraries in the current directory.<br>
+   > - `-ldynamic`: This flag tells the linker to link against a library named `libdynamic.so.` The `-l` flag is used to specify a library name without the "lib" prefix and the ".so" extension.<br>
+   > - So, the overall command is telling the compiler to compile `0-main.c`, link it against the `libdynamic.so` library (assuming it's in the current directory), and produce an executable named `len`.
 </summary>
 
 Create the dynamic library libdynamic.so containing all the functions listed below:
