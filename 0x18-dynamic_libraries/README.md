@@ -211,6 +211,8 @@ These tools are particularly useful when dealing with shared libraries, diagnosi
 `mandatory`
 
 File: [libdynamic.so](), [main.h]()
+> `gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -ldynamic -o len`: 
+   `-L.`: This flag specifies a directory where the linker should look for libraries. In this case, the dot (`.`) represents the current directory. So, `-L.` tells the linker to look for libraries in the current directory.
 </summary>
 
 Create the dynamic library libdynamic.so containing all the functions listed below:
