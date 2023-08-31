@@ -1,7 +1,7 @@
 # **ALX-LOW_LEVEL_PROGRAMMING**
 This is a repository of C-programming projects from the [ALX SE](https://www.alxafrica.com/software-engineering/) course.
 
-## Projects💻:
+## Projects:
 
 ### Low-level programming & Algorithm - Hatching out
 - ☑️ **0x00. [C - Hello, World](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x00-hello_world)**
