@@ -4,7 +4,7 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 ## Projects💻:
 
 ### Low-level programming & Algorithm - Hatching out
-   #### 0x00. [C - Hello, World](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x00-hello_world)
+#### 0x00. [C - Hello, World](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x00-hello_world)
 #### 0x01. [C - Variables, if, else, while](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
 #### 0x02. [C - Functions, nested loops](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
 #### 0x03. [C - Debugging](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x03-debugging)
@@ -29,11 +29,14 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 ### Low-level programming & Algorithm - Data structures and Algorithms
 #### 0x12. [C - Singly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x12-singly_linked_lists)
 #### 0x13. [C - More singly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)
-
-#### 0x15. [C - File I/O](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x15-file_io)
 #### 0x17. [C - Doubly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)
-
 #### 0x19. [C - Stacks, Queues - LIFO, FIFO](https://github.com/codenvibes/monty)
+
+
+### Low-level programming & Algorithm - Linux and Unix system programming
+#### 0x15. [C - File I/O](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x15-file_io)
+#### 0x16. [C - Simple Shell](https://github.com/codenvibes/simple_shell)
+
 
 ## Acknowledgements🫂:
 
