@@ -345,7 +345,7 @@ Write a function that retrieves a value associated with a key.
     - where `ht` is the hash table you want to look into
     - and `key` is the key you are looking for
 - Returns the value associated with the element, or `NULL` if `key` couldn’t be found
-``c
+```c
 julien@ubuntu:~/0x1A. Hash tables$ cat 4-main.c 
 #include <stdlib.h>
 #include <string.h>
