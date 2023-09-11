@@ -106,10 +106,10 @@ Note that all dictionaries are not implemented using hash tables and there is a 
 <details>
 <summary>
 
-### 0. 
+### 0. 0. >>> ht = {}
 `mandatory`
 
-File: []()
+File: [0-hash_table_create.c]()
 </summary>
 
 
@@ -118,10 +118,10 @@ File: []()
 <details>
 <summary>
 
-### 1. 
+### 1. djb2
 `mandatory`
 
-File: []()
+File: [1-djb2.c]()
 </summary>
 
 
@@ -130,10 +130,10 @@ File: []()
 <details>
 <summary>
 
-### 2. 
+### 2. key -> index
 `mandatory`
 
-File: []()
+File: [2-key_index.c]()
 </summary>
 
 
@@ -142,10 +142,10 @@ File: []()
 <details>
 <summary>
 
-### 3. 
+### 3. >>> ht['betty'] = 'cool'
 `mandatory`
 
-File: []()
+File: [3-hash_table_set.c]()
 </summary>
 
 
@@ -154,10 +154,10 @@ File: []()
 <details>
 <summary>
 
-### 4. 
+### 4. >>> ht['betty']
 `mandatory`
 
-File: []()
+File: [4-hash_table_get.c]()
 </summary>
 
 
@@ -166,10 +166,10 @@ File: []()
 <details>
 <summary>
 
-### 5. 
+### 5. >>> print(ht)
 `mandatory`
 
-File: []()
+File: [5-hash_table_print.c]()
 </summary>
 
 
@@ -178,10 +178,10 @@ File: []()
 <details>
 <summary>
 
-### 6. 
+### 6. >>> del ht
 `mandatory`
 
-File: []()
+File: [6-hash_table_delete.c]()
 </summary>
 
 
@@ -190,10 +190,10 @@ File: []()
 <details>
 <summary>
 
-### 7. 
+### 7. $ht['Betty'] = 'Cool'
 `#advanced`
 
-File: []()
+File: [100-sorted_hash_table.c]()
 </summary>
 
 
