@@ -31,13 +31,11 @@ This is a repository of C-programming projects from the [ALX SE](https://www.alx
 - ☑️ **0x13. [C - More singly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)**
 - ☑️ **0x17. [C - Doubly linked lists](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)**
 - ☑️ **0x19. [C - Stacks, Queues - LIFO, FIFO](https://github.com/codenvibes/monty)**
+- ☑️ **0x1A. [C - Hash tables](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x1A-hash_tables)**
 <br>
 
 ### Low-level programming & Algorithm - Linux and Unix system programming
 - ☑️ **0x15. [C - File I/O](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x15-file_io)**
 - ☑️ **0x16. [C - Simple Shell](https://github.com/codenvibes/simple_shell)**
 
-<br>
-<br>
 
-- ☑️ **0x1A. [C - Hash tables](https://github.com/codenvibes/alx-low_level_programming/tree/master/0x1A-hash_tables)**
