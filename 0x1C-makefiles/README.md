@@ -58,7 +58,7 @@ my_executable : my_object_file_1.o my_object_file_2.o
 
 This rule says that the target `my_executable` depends on the prerequisites `my_object_file_1.o` and `my_object_file_2.o`. If either of the object files is newer than `my_executable`, then make will run the command `gcc -o my_executable my_object_file_1.o my_object_file_2.o` to link the object files into `my_executable`.
 
-
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 <details>
@@ -76,6 +76,7 @@ Once you have created a Makefile, you can use the make utility to build your sof
 ```
 make
 ```
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 <details>
@@ -91,7 +92,7 @@ target : prerequisites
 ```
 
 The `target` is the file or task that the rule is responsible for creating. The `prerequisites` are the files or tasks that must be completed before the target can be created. The `commands` are the commands that make will run to create the target.
-
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 <details>
@@ -198,7 +199,7 @@ package : my_executable
 ```
 
 This rule will create a tarball file called `my_package.tar.gz` that contains the executable file `my_executable`.
-
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 <details>
