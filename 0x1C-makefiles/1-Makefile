@@ -1,0 +1,7 @@
+# Auth: codenvibes
+# Desc: a Makefile for Task 1 program compilation
+
+CC = gcc
+SRC = main.c school.c
+all: $(SRC)
+	$(CC) $(SRC) -o school
