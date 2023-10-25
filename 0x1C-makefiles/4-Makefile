@@ -1,0 +1,26 @@
+# Auth: codenvibes
+# Desc: This Makefile defines rules for
+# 	building an executable (compiker flags included),
+# 	deleting temporary Emacs and Vim files and the executable,
+# 	deleting object files,
+# 	and recompiling source files.
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) -f *~ $(NAME)
+
+oclean:
+	$(RM) -f $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
