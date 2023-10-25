@@ -1,3 +1,4 @@
+# Auth: codenvibes
 # a Makefile for building a simple C program.
 
 all: main.c school.c
