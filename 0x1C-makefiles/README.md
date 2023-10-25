@@ -79,10 +79,10 @@ In the following tasks, we are going to use [these files](https://github.com/alx
 <details>
 <summary>
 
-### 0. 
+### 0. make -f 0-Makefile
 `mandatory`
 
-File: []()
+File: [0-Makefile]()
 </summary>
 
 
@@ -91,10 +91,10 @@ File: []()
 <details>
 <summary>
 
-### 1. 
+### 1. make -f 1-Makefile
 `mandatory`
 
-File: []()
+File: [1-Makefile]()
 </summary>
 
 
@@ -103,10 +103,10 @@ File: []()
 <details>
 <summary>
 
-### 2. 
+### 2. make -f 2-Makefile
 `mandatory`
 
-File: []()
+File: [2-Makefile]()
 </summary>
 
 
@@ -115,10 +115,10 @@ File: []()
 <details>
 <summary>
 
-### 3. 
+### 3. make -f 3-Makefile
 `mandatory`
 
-File: []()
+File: [3-Makefile]()
 </summary>
 
 
@@ -127,10 +127,10 @@ File: []()
 <details>
 <summary>
 
-### 4. 
+### 4. A complete Makefile
 `mandatory`
 
-File: []()
+File: [4-Makefile]()
 </summary>
 
 
@@ -139,12 +139,23 @@ File: []()
 <details>
 <summary>
 
-### 5. 
+### 5. Island Perimeter
+`mandatory`
+
+File: [5-island_perimeter.py]()
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+
+### 6. make -f 100-Makefile
 `#advanced`
 
-File: []()
+File: [100-Makefiley]()
 </summary>
 
 
 </details>
-
