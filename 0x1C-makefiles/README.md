@@ -34,7 +34,7 @@
 
 # Learning Objectives
 <details>
-<summary><b><a href=" "> </a>What are <code>make</code>, Makefiles</b></summary>
+<summary><b><a href=" "> </a>What are <code>make</code>, Makefiles</b></summary><br>
 
 A Makefile is a text file that describes how to build a software program. It contains a set of **rules** that tell the make utility how to compile and link source files, create executables, and run other tasks. Makefiles are typically used for C and C++ programs, but can also be used for other languages and tasks.
 
@@ -62,7 +62,7 @@ This rule says that the target `my_executable` depends on the prerequisites `my_
 </details>
 
 <details>
-<summary><b><a href=" "> </a>When, why and how to use Makefiles</b></summary>
+<summary><b><a href=" "> </a>When, why and how to use Makefiles</b></summary><br>
 
 Makefiles are a powerful tool for automating the software build process. They can save developers a lot of time and effort, and they can help to ensure that programs are built correctly and consistently.
 
@@ -79,7 +79,7 @@ make
 </details>
 
 <details>
-<summary><b><a href=" "> </a>What are rules and how to set and use them</b></summary>
+<summary><b><a href=" "> </a>What are rules and how to set and use them</b></summary><br>
 
 **Rules** in a Makefile are instructions on how to build a particular target. A target can be a file, a directory, or a task. A rule has two parts: a target and a list of prerequisites. The prerequisites are the files or tasks that must be completed before the target can be created.
 
@@ -95,19 +95,19 @@ The `target` is the file or task that the rule is responsible for creating. The 
 </details>
 
 <details>
-<summary><b><a href=" "> </a>What are explicit and implicit rules</b></summary>
+<summary><b><a href=" "> </a>What are explicit and implicit rules</b></summary><br>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a>What are the most common / useful rules</b></summary>
+<summary><b><a href=" "> </a>What are the most common / useful rules</b></summary><br>
 
 
 </details>
 
 <details>
-<summary><b><a href=" "> </a>What are variables and how to set and use them</b></summary>
+<summary><b><a href=" "> </a>What are variables and how to set and use them</b></summary><br>
 
 
 </details>
