@@ -1,0 +1,4 @@
+# a Makefile for building a simple C program.
+
+all: main.c school.c
+	gcc main.c school.c -o school
