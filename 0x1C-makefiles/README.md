@@ -36,18 +36,61 @@
 <details>
 <summary><b><a href=" "> </a>What are <code>make</code>, Makefiles</b></summary>
 
+A Makefile is a text file that describes how to build a software program. It contains a set of **rules** that tell the make utility how to compile and link source files, create executables, and run other tasks. Makefiles are typically used for C and C++ programs, but can also be used for other languages and tasks.
+
+Makefiles are made up of a series of rules, each of which has two parts: a target and a list of prerequisites. The target is the file or task that the rule is responsible for creating. The prerequisites are the files or tasks that must be completed before the target can be created.
+
+For example, the following rule tells make how to compile a C source file into an object file:
+
+```
+my_object_file.o : my_source_file.c
+    gcc -c my_source_file.c
+```
+
+This rule says that the target `my_object_file.o` depends on the prerequisite `my_source_file.c`. If `my_source_file.c` is newer than `my_object_file.o`, then make will run the command `gcc -c my_source_file.c` to compile `my_source_file.c` into `my_object_file.o`.
+
+Makefiles can also be used to define more complex tasks, such as linking object files into an executable file, running tests, and creating documentation. For example, the following rule tells make how to link two object files into an executable file:
+
+```
+my_executable : my_object_file_1.o my_object_file_2.o
+    gcc -o my_executable my_object_file_1.o my_object_file_2.o
+```
+
+This rule says that the target `my_executable` depends on the prerequisites `my_object_file_1.o` and `my_object_file_2.o`. If either of the object files is newer than `my_executable`, then make will run the command `gcc -o my_executable my_object_file_1.o my_object_file_2.o` to link the object files into `my_executable`.
+
 
 </details>
 
 <details>
 <summary><b><a href=" "> </a>When, why and how to use Makefiles</b></summary>
 
+Makefiles are a powerful tool for automating the software build process. They can save developers a lot of time and effort, and they can help to ensure that programs are built correctly and consistently.
 
+Here are some of the benefits of using Makefiles:
+
+* **Automation:** Makefiles can automate the entire software build process, from compiling source files to linking executables to running tests. This can save developers a lot of time and effort, and it can help to ensure that programs are built correctly and consistently.
+* **Reproducibility:** Makefiles can help to ensure that programs are built in a reproducible way. This means that the same Makefile can be used to build a program on different machines, and the results will be the same.
+* **Flexibility:** Makefiles are very flexible and can be used to build a wide variety of software programs. They can also be used to automate other tasks, such as creating documentation or running tests.
+
+Once you have created a Makefile, you can use the make utility to build your software program. To do this, simply run the following command in a terminal:
+```
+make
+```
 </details>
 
 <details>
 <summary><b><a href=" "> </a>What are rules and how to set and use them</b></summary>
 
+**Rules** in a Makefile are instructions on how to build a particular target. A target can be a file, a directory, or a task. A rule has two parts: a target and a list of prerequisites. The prerequisites are the files or tasks that must be completed before the target can be created.
+
+To set a rule, you use the following syntax:
+
+```
+target : prerequisites
+    commands
+```
+
+The `target` is the file or task that the rule is responsible for creating. The `prerequisites` are the files or tasks that must be completed before the target can be created. The `commands` are the commands that make will run to create the target.
 
 </details>
 
