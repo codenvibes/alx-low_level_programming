@@ -57,7 +57,6 @@ my_executable : my_object_file_1.o my_object_file_2.o
 ```
 
 This rule says that the target `my_executable` depends on the prerequisites `my_object_file_1.o` and `my_object_file_2.o`. If either of the object files is newer than `my_executable`, then make will run the command `gcc -o my_executable my_object_file_1.o my_object_file_2.o` to link the object files into `my_executable`.
-
 <br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
