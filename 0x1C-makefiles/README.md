@@ -82,7 +82,7 @@ In the following tasks, we are going to use [these files](https://github.com/alx
 ### 0. make -f 0-Makefile
 `mandatory`
 
-File: [0-Makefile]()
+File: [0-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/0-Makefile)
 </summary>
 
 
@@ -94,7 +94,7 @@ File: [0-Makefile]()
 ### 1. make -f 1-Makefile
 `mandatory`
 
-File: [1-Makefile]()
+File: [1-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/1-Makefile)
 </summary>
 
 
@@ -106,7 +106,7 @@ File: [1-Makefile]()
 ### 2. make -f 2-Makefile
 `mandatory`
 
-File: [2-Makefile]()
+File: [2-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/2-Makefile)
 </summary>
 
 
@@ -118,7 +118,7 @@ File: [2-Makefile]()
 ### 3. make -f 3-Makefile
 `mandatory`
 
-File: [3-Makefile]()
+File: [3-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/3-Makefile)
 </summary>
 
 
@@ -130,7 +130,7 @@ File: [3-Makefile]()
 ### 4. A complete Makefile
 `mandatory`
 
-File: [4-Makefile]()
+File: [4-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/4-Makefile)
 </summary>
 
 
@@ -142,7 +142,7 @@ File: [4-Makefile]()
 ### 5. Island Perimeter
 `mandatory`
 
-File: [5-island_perimeter.py]()
+File: [5-island_perimeter.py](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/5-island_perimeter.py)
 </summary>
 
 
@@ -154,7 +154,7 @@ File: [5-island_perimeter.py]()
 ### 6. make -f 100-Makefile
 `#advanced`
 
-File: [100-Makefiley]()
+File: [100-Makefile](https://github.com/codenvibes/alx-low_level_programming/blob/master/0x1C-makefiles/100-Makefile)
 </summary>
 
 
