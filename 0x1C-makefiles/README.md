@@ -233,7 +233,7 @@ my_executable : $(MY_OBJECT_FILE) my_other_object_file.o
 ```
 
 Variables can be used to make your Makefiles more flexible and reusable. For example, if you need to change the compiler options that you use to compile your C source files, you can simply change the value of the variable `MY_CC_FLAGS`. This will automatically update all of the rules in your Makefile that use the variable `MY_CC_FLAGS`.
-
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 # Requirements
