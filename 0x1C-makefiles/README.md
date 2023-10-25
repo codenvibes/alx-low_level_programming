@@ -3,6 +3,8 @@
 
 <!-- # Background Context -->
 
+![gif](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/273/giphy-2.gif)
+
 # Resources
 <details>
 <summary><b><a href="https://www.google.com/search?q=makefile">Makefile</a></b></summary>
