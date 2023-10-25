@@ -132,6 +132,7 @@ Here are some examples of when you might want to use an implicit rule:
 * When you are creating other types of targets that have corresponding implicit rules.
 
 In general, you should use implicit rules whenever possible. They are easier to use and they make your Makefile more portable. However, you should use explicit rules when you need to override the default behavior of an implicit rule or when you need to create a target that does not have a corresponding implicit rule.
+<br> <p align="center">※※※※※※※※※※※※</p> <br>
 </details>
 
 <details>
