@@ -97,18 +97,142 @@ The `target` is the file or task that the rule is responsible for creating. The 
 <details>
 <summary><b><a href=" "> </a>What are explicit and implicit rules</b></summary><br>
 
+**Explicit rules** are rules that you explicitly define in your Makefile. They are the most specific type of rule, and they take precedence over implicit rules.
 
+**Implicit rules** are rules that are built into make. They are used for common tasks, such as compiling C source files into object files and linking object files into executable files.
+
+To use an explicit rule, you simply define it in your Makefile. For example, the following explicit rule tells make how to compile a C source file into an object file:
+
+```
+my_object_file.o : my_source_file.c
+    gcc -c my_source_file.c
+```
+
+To use an implicit rule, you simply specify the target and the prerequisites. Make will automatically determine which implicit rule to use to create the target. For example, the following command will compile the C source file `my_source_file.c` into an object file called `my_object_file.o`:
+
+```
+make my_object_file.o
+```
+
+Make will automatically determine that it needs to use the implicit rule for compiling C source files, and it will run the appropriate command to compile `my_source_file.c` into `my_object_file.o`.
+
+Explicit rules take precedence over implicit rules. This means that if you define an explicit rule for a target, make will use that rule instead of the implicit rule.
+
+Here are some examples of when you might want to use an explicit rule:
+
+* When you need to use different compiler options than the default options.
+* When you need to link object files together in a specific order.
+* When you need to create a target that does not have a corresponding implicit rule.
+
+Here are some examples of when you might want to use an implicit rule:
+
+* When you are compiling C source files into object files.
+* When you are linking object files into executable files.
+* When you are creating other types of targets that have corresponding implicit rules.
+
+In general, you should use implicit rules whenever possible. They are easier to use and they make your Makefile more portable. However, you should use explicit rules when you need to override the default behavior of an implicit rule or when you need to create a target that does not have a corresponding implicit rule.
 </details>
 
 <details>
 <summary><b><a href=" "> </a>What are the most common / useful rules</b></summary><br>
 
+The most common and useful Makefile rules are the following:
+
+* **Compiling C source files into object files:**
+
+```
+my_object_file.o : my_source_file.c
+    gcc -c my_source_file.c
+```
+
+* **Linking object files into executable files:**
+
+```
+my_executable : my_object_file_1.o my_object_file_2.o
+    gcc -o my_executable my_object_file_1.o my_object_file_2.o
+```
+
+* **Running tests:**
+
+```
+test : my_executable
+    ./my_executable
+```
+
+* **Cleaning up build files:**
+
+```
+clean :
+    rm -f *.o my_executable
+```
+
+These rules can be used to automate the build process for a wide variety of software programs.
+
+In addition to these common rules, you can also use Makefile rules to define more complex tasks, such as:
+
+* Creating documentation
+* Building distribution packages
+* Deploying software to production environments
+
+Here are some examples of how to use the common rules above:
+
+```
+# Compile a C source file into an object file.
+make my_object_file.o
+
+# Link object files into an executable file.
+make my_executable
+
+# Run tests.
+make test
+
+# Clean up build files.
+make clean
+```
+
+You can also use these rules in combination to create more complex tasks. For example, the following rule creates a distribution package for the software program:
+
+```
+package : my_executable
+    tar -czvf my_package.tar.gz my_executable
+```
+
+This rule will create a tarball file called `my_package.tar.gz` that contains the executable file `my_executable`.
 
 </details>
 
 <details>
 <summary><b><a href=" "> </a>What are variables and how to set and use them</b></summary><br>
 
+Variables in Makefiles are used to store values that can be used in multiple places throughout the Makefile. Variables can be used to store the names of files, directories, compiler options, and other values.
+
+To set a variable, you use the following syntax:
+
+```
+variable_name = value
+```
+
+For example, the following line sets the variable `MY_OBJECT_FILE` to the value `my_object_file.o`:
+
+```
+MY_OBJECT_FILE = my_object_file.o
+```
+
+To use a variable, you simply enclose the variable name in parentheses. For example, the following rule uses the variable `MY_OBJECT_FILE` to compile the C source file `my_source_file.c` into an object file:
+
+```
+$(MY_OBJECT_FILE) : my_source_file.c
+    gcc -c my_source_file.c
+```
+
+You can also use variables in more complex expressions. For example, the following rule uses the variable `MY_OBJECT_FILE` to link two object files into an executable file:
+
+```
+my_executable : $(MY_OBJECT_FILE) my_other_object_file.o
+    gcc -o my_executable $(MY_OBJECT_FILE) my_other_object_file.o
+```
+
+Variables can be used to make your Makefiles more flexible and reusable. For example, if you need to change the compiler options that you use to compile your C source files, you can simply change the value of the variable `MY_CC_FLAGS`. This will automatically update all of the rules in your Makefile that use the variable `MY_CC_FLAGS`.
 
 </details>
 
