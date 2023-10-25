@@ -1,0 +1,10 @@
+# Auth: codenvibes
+# Desc: A Makefile for Task 2 program compilation.
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
