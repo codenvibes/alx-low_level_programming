@@ -235,7 +235,7 @@ Found 999 at index: -1
 File: [2-O]()
 </summary>
 
-
+What is the `time complexity` (worst case) of a linear search in an array of size `n`?
 </details>
 
 <details>
@@ -247,7 +247,7 @@ File: [2-O]()
 File: [3-O]()
 </summary>
 
-
+What is the `space complexity` (worst case) of an iterative linear search algorithm in an array of size `n`?
 </details>
 
 <details>
@@ -259,7 +259,7 @@ File: [3-O]()
 File: [4-O]()
 </summary>
 
-
+What is the `time complexity` (worst case) of a binary search in an array of size `n`?
 </details>
 
 <details>
