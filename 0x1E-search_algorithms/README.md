@@ -100,22 +100,77 @@ You will be asked to write files containing big O notations. Please use this for
 <details>
 <summary>
 
-### 0. 
+### 0. Linear search
 `mandatory`
 
-File: []()
+File: [0-linear.c]()
 </summary>
 
+Write a function that searches for a value in an array of integers using the [Linear search algorithm](https://intranet.alxswe.com/rltoken/17RKhbmvh_u4ebCwaSxCxg)
+- Prototype : `int linear_search(int *array, size_t size, int value);`
+- Where `array` is a pointer to the first element of the array to search in
+- `size` is the number of elements in `array`
+- And `value` is the value to search for
+- Your function must return the first index where `value` is located
+- If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
+- Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
+```
+wilfried@0x1E-search_algorithms$ cat 0-main.c 
+#include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
 
+/**
+ * main - Entry point
+ *
+ * Return: Always EXIT_SUCCESS
+ */
+int main(void)
+{
+    int array[] = {
+        10, 1, 42, 3, 4, 42, 6, 7, -1, 9
+    };
+    size_t size = sizeof(array) / sizeof(array[0]);
+
+    printf("Found %d at index: %d\n\n", 3, linear_search(array, size, 3));
+    printf("Found %d at index: %d\n\n", 42, linear_search(array, size, 42));
+    printf("Found %d at index: %d\n", 999, linear_search(array, size, 999));
+    return (EXIT_SUCCESS);
+}
+wilfried@0x1E-search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-linear.c -o 0-linear
+wilfried@0x1E-search_algorithms$ ./0-linear 
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Value checked array[3] = [3]
+Found 3 at index: 3
+
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Found 42 at index: 2
+
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Value checked array[3] = [3]
+Value checked array[4] = [4]
+Value checked array[5] = [42]
+Value checked array[6] = [6]
+Value checked array[7] = [7]
+Value checked array[8] = [-1]
+Value checked array[9] = [9]
+Found 999 at index: -1
+```
 </details>
 
 <details>
 <summary>
 
-### 1. 
+### 1. Binary search
 `mandatory`
 
-File: []()
+File: [1-binary.c]()
 </summary>
 
 
@@ -124,10 +179,10 @@ File: []()
 <details>
 <summary>
 
-### 2. 
+### 2. Big O #0
 `mandatory`
 
-File: []()
+File: [2-O]()
 </summary>
 
 
@@ -136,10 +191,10 @@ File: []()
 <details>
 <summary>
 
-### 3. 
+### 3. Big O #1
 `mandatory`
 
-File: []()
+File: [3-O]()
 </summary>
 
 
@@ -148,10 +203,10 @@ File: []()
 <details>
 <summary>
 
-### 4. 
+### 4. Big O #2
 `mandatory`
 
-File: []()
+File: [4-O]()
 </summary>
 
 
@@ -160,10 +215,10 @@ File: []()
 <details>
 <summary>
 
-### 5. 
+### 5. Big O #3
 `mandatory`
 
-File: []()
+File: [5-O]()
 </summary>
 
 
@@ -172,10 +227,10 @@ File: []()
 <details>
 <summary>
 
-### 6. 
+### 6. Big O #4
 `mandatory`
 
-File: []()
+File: [6-O]()
 </summary>
 
 
@@ -184,7 +239,31 @@ File: []()
 <details>
 <summary>
 
-### 7. 
+### 7. Jump search
+`#advanced`
+
+File: [100-jump.c]()
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+
+### 8. Big O #5
+`#advanced`
+
+File: [101-O]()
+</summary>
+
+
+</details>
+
+<details>
+<summary>
+
+### 9. Interpolation search
 `#advanced`
 
 File: []()
@@ -196,10 +275,10 @@ File: []()
 <details>
 <summary>
 
-### 8. 
+### 10. Exponential search
 `#advanced`
 
-File: []()
+File: [103-exponential.c]()
 </summary>
 
 
@@ -208,10 +287,10 @@ File: []()
 <details>
 <summary>
 
-### 9. 
+### 11. Advanced binary search
 `#advanced`
 
-File: []()
+File: [104-advanced_binary.c]()
 </summary>
 
 
@@ -220,10 +299,10 @@ File: []()
 <details>
 <summary>
 
-### 10. 
+### 12. Jump search in a singly linked list
 `#advanced`
 
-File: []()
+File: [105-jump_list.c]()
 </summary>
 
 
@@ -232,10 +311,10 @@ File: []()
 <details>
 <summary>
 
-### 11. 
+### 13. Linear search in a skip list
 `#advanced`
 
-File: []()
+File: [106-linear_skip.c]()
 </summary>
 
 
@@ -244,10 +323,10 @@ File: []()
 <details>
 <summary>
 
-### 12. 
+### 14. Big O #6
 `#advanced`
 
-File: []()
+File: [107-O]()
 </summary>
 
 
@@ -256,34 +335,10 @@ File: []()
 <details>
 <summary>
 
-### 13. 
+### 15. Big O #7
 `#advanced`
 
-File: []()
-</summary>
-
-
-</details>
-
-<details>
-<summary>
-
-### 14. 
-`#advanced`
-
-File: []()
-</summary>
-
-
-</details>
-
-<details>
-<summary>
-
-### 15. 
-`#advanced`
-
-File: []()
+File: [108-O]()
 </summary>
 
 
